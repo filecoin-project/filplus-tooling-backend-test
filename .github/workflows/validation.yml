@@ -1,0 +1,26 @@
+name: LDN Application Validation
+
+on:
+  push:
+
+jobs:
+  validate_json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install AJV CLI
+        run: npm install -g ajv-cli
+
+      - name: Validate JSON
+        run: |
+          echo "Validating JSON..."
+          ajv validate -s 'validationSchema.json' -d 'test-file.json'
+          echo "Validation complete."
