@@ -19,8 +19,15 @@ jobs:
       - name: Install AJV CLI
         run: npm install -g ajv-cli
 
-      - name: Validate JSON
+      - name: Find and Validate JSON
         run: |
-          echo "Validating JSON..."
-          ajv validate -s 'validationSchema.json' -d 'test-file.json'
+          echo "Searching for JSON file..."
+          # Find the first JSON file in the current directory that is not validationSchema.json
+          FILE_TO_VALIDATE=$(find . -name '*.json' ! -name 'validationSchema.json' | head -n 1)
+          if [ -z "$FILE_TO_VALIDATE" ]; then
+            echo "No JSON file found for validation."
+            exit 1
+          fi
+          echo "Validating $FILE_TO_VALIDATE..."
+          ajv validate -s 'validationSchema.json' -d "$FILE_TO_VALIDATE"
           echo "Validation complete."

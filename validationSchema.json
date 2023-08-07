@@ -1,81 +1,80 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "string"
-      },
-      "_type": {
-        "type": "string",
-        "enum": ["da", "ldn-v3", "e-fil"]
-      },
-      "info": {
-        "type": "object",
-        "properties": {
-          "core_information": {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "_type": {
+      "type": "string",
+      "enum": ["da", "ldn-v3", "e-fil"]
+    },
+    "info": {
+      "type": "object",
+      "properties": {
+        "core_information": {
+          "type": "object",
+          "properties": {
+            "data_owner_name": { "type": "string" },
+            "data_owner_region": { "type": "string" },
+            "data_owner_industry": { "type": "string" },
+            "website": { "type": "string" },
+            "social_media": { "type": "string" }
+          },
+          "required": ["data_owner_name", "data_owner_region", "data_owner_industry", "website", "social_media"]
+        },
+        "application_lifecycle": {
+          "type": "object",
+          "properties": {
+            "state": { "type": "string" },
+            "validated_time": { "type": "string" },
+            "initial_pr_number": { "type": "integer" },
+            "validated_by": { "type": "string" },
+            "first_allocation_time": { "type": "string" },
+            "is_active": { "type": "boolean" },
+            "time_of_new_state": { "type": "string" }
+          },
+          "required": ["state", "validated_time", "initial_pr_number", "validated_by", "first_allocation_time", "is_active", "time_of_new_state"]
+        },
+        "datacap_allocations": {
+          "type": "array",
+          "items": {
             "type": "object",
             "properties": {
-              "data_owner_name": { "type": "string" },
-              "data_owner_region": { "type": "string" },
-              "data_owner_industry": { "type": "string" },
-              "website": { "type": "string" },
-              "social_media": { "type": "string" }
-            },
-            "required": ["data_owner_name", "data_owner_region", "data_owner_industry", "website", "social_media"]
-          },
-          "application_lifecycle": {
-            "type": "object",
-            "properties": {
-              "state": { "type": "string" },
-              "validated_time": { "type": "string" },
-              "initial_pr_number": { "type": "integer" },
-              "validated_by": { "type": "string" },
-              "first_allocation_time": { "type": "string" },
-              "is_active": { "type": "boolean" },
-              "time_of_new_state": { "type": "string" }
-            },
-            "required": ["state", "validated_time", "initial_pr_number", "validated_by", "first_allocation_time", "is_active", "time_of_new_state"]
-          },
-          "datacap_allocations": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "request_information": {
+              "request_information": {
+                "type": "object",
+                "properties": {
+                  "actor": { "type": "string" },
+                  "uuid": { "type": "string" },
+                  "request_id": { "type": "string" },
+                  "request_type": { "type": "string", "enum": ["New", "Removal", "Refill"] },
+                  "client_address": { "type": "string" },
+                  "created_at": { "type": "string" },
+                  "is_active": { "type": "boolean" },
+                  "allocation_amount": { "type": "string" }
+                },
+                "required": ["actor", "uuid", "request_id", "request_type", "client_address", "created_at", "is_active", "allocation_amount"]
+              },
+              "signers": {
+                "type": "array",
+                "items": {
                   "type": "object",
                   "properties": {
-                    "actor": { "type": "string" },
-                    "uuid": { "type": "string" },
-                    "request_id": { "type": "string" },
-                    "request_type": { "type": "string", "enum": ["New", "Removal", "Refill"] },
-                    "client_address": { "type": "string" },
-                    "created_at": { "type": "string" },
-                    "is_active": { "type": "boolean" },
-                    "allocation_amount": { "type": "string" }
+                    "signing_address": { "type": "string" },
+                    "time_of_signature": { "type": "string" },
+                    "message_cid": { "type": "string" }
                   },
-                  "required": ["actor", "uuid", "request_id", "request_type", "client_address", "created_at", "is_active", "allocation_amount"]
-                },
-                "signers": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "signing_address": { "type": "string" },
-                      "time_of_signature": { "type": "string" },
-                      "message_cid": { "type": "string" }
-                    },
-                    "required": ["signing_address", "time_of_signature", "message_cid"]
-                  }
+                  "required": ["signing_address", "time_of_signature", "message_cid"]
                 }
-              },
-              "required": ["request_information", "signers"]
-            }
+              }
+            },
+            "required": ["request_information", "signers"]
           }
-        },
-        "required": ["core_information", "application_lifecycle", "datacap_allocations"]
-      }
-    },
-    "required": ["id", "_type", "info"],
-    "additionalProperties": false
-  }
-  
+        }
+      },
+      "required": ["core_information", "application_lifecycle", "datacap_allocations"]
+    }
+  },
+  "required": ["id", "_type", "info"],
+  "additionalProperties": false
+}
