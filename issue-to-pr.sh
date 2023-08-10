@@ -1,4 +1,4 @@
 #!/bin/sh
-echo $0
-ISSUE_NUMBER = $0
+echo $1
+ISSUE_NUMBER = $1
 echo "Issue Number: $ISSUE_NUMBER"
