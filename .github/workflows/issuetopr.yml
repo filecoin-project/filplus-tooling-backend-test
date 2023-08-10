@@ -16,6 +16,7 @@ jobs:
       - name: Convert Issue To PR
         run: |
           echo "Converting Issue To PR"
+          echo ${{ github.event.issue.number }}
           sh issue-to-pr.sh ${{ github.event.issue.number }}
 
 
