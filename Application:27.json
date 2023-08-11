@@ -10,13 +10,13 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "Proposal",
+      "state": "Approval",
       "validated_time": "2023-08-11 12:41:57.304944544 UTC",
       "initial_pr_number": 28,
       "validated_by": "filplus-github-bot-read-write[bot]",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-08-11 12:41:59.185439830 UTC"
+      "time_of_new_state": "2023-08-11 12:42:01.806258140 UTC"
     },
     "datacap_allocations": [
       {
