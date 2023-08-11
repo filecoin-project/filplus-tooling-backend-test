@@ -1,0 +1,22 @@
+name: Convert Issue To Pull Request
+
+# Run when new issues created
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  listen-to-new-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Convert Issue To PR
+        run: |
+          echo "Converting Issue To PR"
+          echo ${{ github.event.issue.number }}
+          sh issue-to-pr.sh ${{ github.event.issue.number }}
+
+
