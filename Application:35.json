@@ -1,1 +1,23 @@
-{}
+{
+  "id": "35",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "charly",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "TODO",
+      "website": "test",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-08-16 14:37:13.278002332 UTC",
+      "initial_pr_number": 36,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-08-16 14:37:13.278013632 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
