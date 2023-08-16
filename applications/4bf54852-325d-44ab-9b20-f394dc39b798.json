@@ -1,0 +1,94 @@
+{
+  "applicationVersion": 1,
+  "dataCapApplicationType": "da | ldn-v3 | e-fil",
+  "projectId": 1,
+  "datacapApplicant": "",
+  "applicationInfo": {
+    "coreInformation": {
+      "Data Owner Name": "asd",
+      "Data Owner Country/Region": "Albania",
+      "Data Owner Industry": "Arts & Recreation",
+      "Website": "https://example.com",
+      "Social Media": {
+        "handle": "asd",
+        "type": "sd"
+      },
+      "What is your role related to the dataset": "Data Preparer",
+      "Total amount of DataCap being requested": {
+        "amount": 1,
+        "unit": "PiB"
+      },
+      "Expected size of single dataset (one copy)": {
+        "amount": 199,
+        "unit": "TiB"
+      },
+      "Number of replicas to store": "1",
+      "Weekly allocation of DataCap requested": {
+        "amount": 1123,
+        "unit": "TiB"
+      },
+      "On-chain address for first allocation": "asd",
+      "Data Type of Application": "Slingshot",
+      "Custom multisig": "No"
+    },
+    "projectDetails": {
+      "Share a brief history of your project and organization": "asd",
+      "Is this project associated with other projects/ecosystem stakeholders?": "No",
+      "If answered yes, what are the other projects/ecosystem stakeholders": ""
+    },
+    "useCaseDetails": {
+      "Describe the data being stored onto Filecoin": "asd",
+      "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+      "If you answered 'Other' in the previous question, enter the details here": "",
+      "How do you plan to prepare the dataset": "lotus",
+      "If you answered 'other/custom tool' in the previous question, enter the details here": "",
+      "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "asd",
+      "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "Yes",
+      "If you chose not to confirm, what was the reason": "",
+      "What is the expected retrieval frequency for this data": "Weekly",
+      "For how long do you plan to keep this dataset stored on Filecoin": "1.5 to 2 years"
+    },
+    "datacapAllocationPlan": {
+      "In which geographies do you plan on making storage deals": "Africa",
+      "How will you be distributing your data to storage providers": "Shipping hard drives",
+      "How do you plan to choose storage providers": "Big Data Exchange",
+      "If you answered 'Other' in the previous question, what is the tool or platform you plan to use": "",
+      "If you already have a list of storage providers to work with, fill out their names and provider IDs below": "",
+      "How do you plan to make deals to your storage providers": "Boost client",
+      "If you answered 'Others/custom tool' in the previous question, enter the details here": "",
+      "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+    }
+  },
+  "applicationLifecycle": {
+    "validatedTime": 0,
+    "firstAllocationTime": 0,
+    "isActive": true,
+    "timeOfNewState": 0
+  },
+  "dataCapAllocations": [
+    {
+      "dataCapTranche": {
+        "uuid": 0,
+        "clientAddress": "f1...",
+        "timeOfRequest": 0,
+        "timeOfAllocation": 0,
+        "notaryAddress": "",
+        "allocationAmount": 0,
+        "signers": [
+          {
+            "signingAddress": "",
+            "timeOfSignature": 0,
+            "messageCID": ""
+          },
+          {
+            "signingAddress": "",
+            "timeOfSignature": 0,
+            "messageCID": ""
+          }
+        ],
+        "pr": 0,
+        "pr-cid": "bafy..."
+      }
+    }
+  ]
+}
