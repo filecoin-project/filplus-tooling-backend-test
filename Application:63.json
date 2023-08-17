@@ -10,13 +10,13 @@
         "social_media": "TODO"
       },
       "application_lifecycle": {
-        "state": "Approval",
-        "validated_time": "2023-08-01 12:13:34.631458810 UTC",
-        "initial_pr_number": 115,
-        "validated_by": "jbesraa",
-        "first_allocation_time": "",
-        "is_active": true,
-        "time_of_new_state": "2023-08-01 12:19:54.141137704 UTC"
+         "state": "GovernanceReview",
+         "validated_time": "2023-08-17 10:34:03.425152690 UTC",
+         "initial_pr_number": 64,
+         "validated_by": "",
+         "first_allocation_time": "",
+         "is_active": true,
+         "time_of_new_state": "2023-08-17 10:34:03.425155577 UTC"
       },
       "datacap_allocations": [
         {
