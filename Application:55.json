@@ -1,1 +1,23 @@
-{}
+{
+  "id": "55",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "No Name",
+      "data_owner_region": "No Region",
+      "data_owner_industry": "TODO",
+      "website": "No Website",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-08-17 10:13:00.011414100 UTC",
+      "initial_pr_number": 56,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-08-17 10:13:00.011484300 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
