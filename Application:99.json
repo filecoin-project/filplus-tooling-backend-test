@@ -1,1 +1,23 @@
-{}
+{
+  "id": "99",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Stojan",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "TODO",
+      "website": "https://pangeo-data.github.io/pangeo-cmip6-cloud/",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-08-21 19:01:50.600881900 UTC",
+      "initial_pr_number": 100,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-08-21 19:01:50.600941100 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
