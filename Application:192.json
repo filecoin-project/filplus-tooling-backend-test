@@ -10,7 +10,7 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "Proposal",
+      "state": "Approval",
       "validated_time": "2023-09-01 15:34:10.585985304 UTC",
       "initial_pr_number": 193,
       "validated_by": "filplus-github-bot-read-write[bot]",
