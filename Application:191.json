@@ -7,7 +7,11 @@
       "data_owner_region": "No Region",
       "data_owner_industry": "TODO",
       "website": "No Website",
-      "social_media": "TODO"
+      "social_media": "TODO",
+      "datacap_requested": {
+        "amount": 5,
+        "unit": "PiB"
+      }
     },
     "application_lifecycle": {
       "state": "Confirmed",
@@ -30,18 +34,7 @@
           "is_active": true,
           "allocation_amount": "No Datacap Requested"
         },
-        "signers": [
-          {
-            "signing_address": "",
-            "time_of_signature": "",
-            "message_cid": ""
-          },
-          {
-            "signing_address": "",
-            "time_of_signature": "2023-09-06 15:23:52.772000000 UTC",
-            "message_cid": ""
-          }
-        ]
+        "signers": []
       }
     ]
   }
