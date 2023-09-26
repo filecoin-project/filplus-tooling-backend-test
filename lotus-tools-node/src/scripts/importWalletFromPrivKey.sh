@@ -38,5 +38,8 @@ else
     echo "Error: $decrypted_keys"
 fi
 
+# Delete the encrypted configuration file
+rm -f config.enc
+
 # Wait for user input before exiting
 read -p "Press Enter to exit"
