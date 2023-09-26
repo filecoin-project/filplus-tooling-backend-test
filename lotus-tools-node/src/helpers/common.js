@@ -37,3 +37,39 @@ export function loadEnv() {
         }
     }
 }
+
+export async function inspectMsig(msigAddress) {
+    const msigOutput = await runCommand('lotus', ['msig', 'inspect', msigAddress]);
+    const lines = msigOutput.split("\n");
+    
+    const pendingTransactions = [];
+    
+    let isTransactionSection = false;
+    for (const line of lines) {
+        if (line.startsWith("Transactions:")) {
+            isTransactionSection = true;
+            continue;  // Skip the "Transactions:" line
+        }
+
+        if (isTransactionSection && line.trim() !== "") {
+            // Example line format: 
+            // 9       pending  1          t06     0 FIL   RemoveVerifiedClientDataCap(7)  8443008008420064824300ec075842...
+            const regex = /(\d+)\s+pending\s+\d+\s+\w+\s+\d+ FIL\s+([\w()]+)\s+(\w+)/;
+            const matches = line.match(regex);
+            
+            if (matches) {
+                const transactionId = matches[1];
+                const methodName = matches[2];
+                const params = matches[3];
+                
+                pendingTransactions.push({
+                    transactionId,
+                    methodName,
+                    params
+                });
+            }
+        }
+    }
+    
+    return pendingTransactions;
+}

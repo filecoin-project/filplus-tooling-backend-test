@@ -48,3 +48,35 @@ export async function removeVerifiedClientDataCap(rootKeyHolder1, client, dataca
         console.log(`Remove datacap: ${commandOutput}`);
         return commandOutput;
 }
+
+export async function approveDataCapRemoval(multisigAddress, rootAddress2) {
+    const pendingTransactions = await inspectMsig(multisigAddress);
+
+    const dataCapRemovalTransactions = pendingTransactions.filter(transaction => transaction.methodName === 'RemoveVerifiedClientDataCap(7)');
+
+    if (dataCapRemovalTransactions.length === 0) {
+        console.log("No pending datacap removal transactions found.");
+        return;
+    }
+
+    const lastDataCapRemovalTransaction = dataCapRemovalTransactions[dataCapRemovalTransactions.length - 1];
+
+    const transactionId = lastDataCapRemovalTransaction.transactionId;
+    const params = lastDataCapRemovalTransaction.params;
+
+    const approvalArgs = [
+        'msig',
+        'approve',
+        '--from=' + rootAddress2,
+        multisigAddress,
+        transactionId,
+        't0100',
+        't06',
+        '0',
+        '7',  // Method id for RemoveVerifiedClientDataCap
+        params
+    ];
+
+    const approvalMessage = await runCommand('lotus', approvalArgs);
+    console.log(`Approval message: ${approvalMessage}`);
+}
