@@ -10,7 +10,7 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "Confirmed",
+      "state": "GovernanceReview",
       "validated_time": "2023-09-01 13:51:40.421281151 UTC",
       "initial_pr_number": 188,
       "validated_by": "jbesraa",
@@ -31,16 +31,6 @@
           "allocation_amount": "100TiB"
         },
         "signers": [
-          {
-            "signing_address": "signing_address_here",
-            "time_of_signature": "time_of_signature_here",
-            "message_cid": "message_cid_here"
-          },
-          {
-            "signing_address": "signing_address_here",
-            "time_of_signature": "time_of_signature_here",
-            "message_cid": "message_cid_here"
-          }
         ]
       }
     ]
