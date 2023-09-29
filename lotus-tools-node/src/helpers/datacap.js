@@ -12,6 +12,7 @@ export async function addDatacap(notaryAddress, clientAddress, datacapAmount) {
 }
   
 export async function checkClientDataCap(clientAddress) {
+    try{
         const datacapAmount = await runCommand('lotus', [
             'filplus',
             'check-client-datacap',
@@ -19,6 +20,9 @@ export async function checkClientDataCap(clientAddress) {
         ]);
         console.log(`Client ${clientAddress} has datacap: ${datacapAmount}`);
         return datacapAmount;
+    } catch (err){
+        return 0;
+    }
 }
 
 export async function signRemoveDataCapProposal(from, client, datacap) {
