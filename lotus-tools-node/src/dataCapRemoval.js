@@ -26,17 +26,7 @@ async function startRemoval(client, datacapToRemove) {
     
     // Set the permissions to 0600
     fs.chmodSync(keystorePath, 0o600);
-    
-    //Add datacap to match the removal 
-    // (the client must have at least as much as the datacap to remove in order to sign the removal)
-    const checkDataCapBefore = await datacap.checkClientDataCap(client);
-    if (checkDataCapBefore < datacapToRemove) {
-    await datacap.addDatacap(notaryAddress1, client, datacapToRemove);
-    const checkDataCap = await datacap.checkClientDataCap(client);
-    console.log("Client datacap matched with removal: ", checkDataCap);
-    } else 
-    console.log("Client already has the datacap requested... Proceeding...")
-
+   
     //Sign data removal proposal
     console.log("Signing on notary1")
     const removeDataCapProposal1 = await datacap.signRemoveDataCapProposal(notaryAddress1, client, datacapToRemove);
@@ -45,4 +35,4 @@ async function startRemoval(client, datacapToRemove) {
     return;
 }
 
-startRemoval("t1fuyotngdccs3xefpmzik2dhuk2x4wsrpcnzbyta", 1000)
+startRemoval("t1fuyotngdccs3xefpmzik2dhuk2x4wsrpcnzbyta", 2000)
