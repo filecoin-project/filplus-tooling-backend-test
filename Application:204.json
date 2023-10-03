@@ -1,1 +1,23 @@
-{}
+{
+  "id": "204",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Charly test",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "TODO",
+      "website": "test",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-10-03 13:30:23.068930377 UTC",
+      "initial_pr_number": 205,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-10-03 13:30:23.068932950 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
