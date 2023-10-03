@@ -10,13 +10,13 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "Proposal",
+      "state": "Approval",
       "validated_time": "2023-10-03 13:30:06.721416076 UTC",
       "initial_pr_number": 203,
       "validated_by": "clriesco",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-03 13:31:01.670131583 UTC"
+      "time_of_new_state": "2023-10-03 13:31:22.102777094 UTC"
     },
     "datacap_allocations": [
       {
@@ -30,7 +30,13 @@
           "is_active": true,
           "allocation_amount": "100TiB"
         },
-        "signers": []
+        "signers": [
+          {
+            "signing_address": "",
+            "time_of_signature": "2023-10-03 13:31:21.178000000 UTC",
+            "message_cid": "bafy2bzacednjtdg7hyajmqkh2gb4fu4c2gvala4qoozmbf5b57xnnpy34rm4e"
+          }
+        ]
       }
     ]
   }
