@@ -1,1 +1,23 @@
-{}
+{
+  "id": "218",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Dragon Negro",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "TODO",
+      "website": "test",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-10-03 21:11:21.028706077 UTC",
+      "initial_pr_number": 219,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-10-03 21:11:21.028708863 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
