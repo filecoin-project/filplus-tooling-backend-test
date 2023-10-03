@@ -10,13 +10,13 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "Approval",
+      "state": "Confirmed",
       "validated_time": "2023-10-03 13:30:06.721416076 UTC",
       "initial_pr_number": 203,
       "validated_by": "clriesco",
-      "first_allocation_time": "",
-      "is_active": true,
-      "time_of_new_state": "2023-10-03 13:31:22.102777094 UTC"
+      "first_allocation_time": "2023-10-03 13:32:06.581980299 UTC",
+      "is_active": false,
+      "time_of_new_state": "2023-10-03 13:32:06.581983534 UTC"
     },
     "datacap_allocations": [
       {
@@ -35,6 +35,11 @@
             "signing_address": "",
             "time_of_signature": "2023-10-03 13:31:21.178000000 UTC",
             "message_cid": "bafy2bzacednjtdg7hyajmqkh2gb4fu4c2gvala4qoozmbf5b57xnnpy34rm4e"
+          },
+          {
+            "signing_address": "",
+            "time_of_signature": "2023-10-03 13:32:05.625000000 UTC",
+            "message_cid": "bafy2bzacead5e43zg7xqoq3qll36ltsy3f23dexhteexqbsk23gp2ymph2ubm"
           }
         ]
       }
