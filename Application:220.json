@@ -1,1 +1,23 @@
-{}
+{
+  "id": "220",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Dragon Negro 2",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "TODO",
+      "website": "test",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-10-05 08:12:46.081328227 UTC",
+      "initial_pr_number": 221,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-10-05 08:12:46.081331017 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
