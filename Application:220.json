@@ -10,14 +10,28 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "GovernanceReview",
+      "state": "Proposal",
       "validated_time": "2023-10-05 08:12:46.081328227 UTC",
       "initial_pr_number": 221,
-      "validated_by": "",
+      "validated_by": "clriesco",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-05 08:12:46.081331017 UTC"
+      "time_of_new_state": "2023-10-05 08:12:55.044103544 UTC"
     },
-    "datacap_allocations": []
+    "datacap_allocations": [
+      {
+        "request_information": {
+          "actor": "clriesco",
+          "uuid": "TODO",
+          "request_id": "random request id",
+          "request_type": "New",
+          "client_address": "f1nz634pdmrxpidhvyqsoshvzg4ilis2kuayrybwy",
+          "created_at": "2023-10-05 08:12:55.044097673 UTC",
+          "is_active": true,
+          "allocation_amount": "100TiB"
+        },
+        "signers": []
+      }
+    ]
   }
 }
