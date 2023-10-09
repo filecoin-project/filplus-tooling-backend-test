@@ -33,7 +33,18 @@
           "is_active": true,
           "allocation_amount": "15PiB"
         },
-        "signers": []
+        "signers": [
+          {
+              "signing_address": "signing_address",
+              "time_of_signature": "time_of_signature",
+              "message_cid": "message_cid"
+          },
+          {
+              "signing_address": "signing_address",
+              "time_of_signature": "time_of_signature",
+              "message_cid": "message_cid"
+          }
+        ]
       }
     ]
   }
