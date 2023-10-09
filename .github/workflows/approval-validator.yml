@@ -1,4 +1,4 @@
-name: Proposal Validator
+name: Approval Validator
 
 on:
   push:
@@ -19,7 +19,8 @@ jobs:
     - name: Install fplus-cli
       run: echo 'Install fplus-cli'
       # run: cargo install fplus-cli
-    - name: Validate Proposal
-      run: echo 'Validate Proposal'  
-      # run: fplus-cli validate-proposal app_id
+    - name: Validate Approval
+      run: echo 'Validate Approval'  
+      # run: fplus-cli validate-approval app_id
+
 
