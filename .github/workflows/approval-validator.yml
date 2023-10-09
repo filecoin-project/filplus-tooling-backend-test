@@ -1,4 +1,4 @@
-name: ApprovalValidator
+name: Approval Validator
 
 on:
   push:

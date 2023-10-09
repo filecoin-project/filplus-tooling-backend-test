@@ -1,4 +1,4 @@
-name: LDN Application Validation
+name: Json Structure Validator
 
 on:
   push:

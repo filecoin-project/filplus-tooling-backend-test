@@ -1,4 +1,4 @@
-name: TriggerValidator
+name: Trigger Validator
 
 on:
   push:

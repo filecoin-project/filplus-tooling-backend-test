@@ -1,4 +1,4 @@
-name: ProposalValidator
+name: Proposal Validator
 
 on:
   push:
