@@ -13,13 +13,13 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "Approval",
+      "state": "Confirmed",
       "validated_time": "2023-10-09 09:13:12.658154 UTC",
       "initial_pr_number": 223,
       "validated_by": "filplus-github-bot-read-write[bot]",
-      "first_allocation_time": "",
-      "is_active": true,
-      "time_of_new_state": "2023-10-09 09:18:11.636046 UTC"
+      "first_allocation_time": "2023-10-09 09:18:59.589822 UTC",
+      "is_active": false,
+      "time_of_new_state": "2023-10-09 09:18:59.589848 UTC"
     },
     "datacap_allocations": [
       {
@@ -34,6 +34,11 @@
           "allocation_amount": "15PiB"
         },
         "signers": [
+          {
+            "signing_address": "signing_address",
+            "time_of_signature": "time_of_signature",
+            "message_cid": "message_cid"
+          },
           {
             "signing_address": "signing_address",
             "time_of_signature": "time_of_signature",
