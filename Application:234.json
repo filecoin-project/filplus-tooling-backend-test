@@ -1,1 +1,27 @@
-{}
+{
+  "id": "234",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Stojan",
+      "data_owner_github_handle": "GithubHandleTodo",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "TODO",
+      "data_owner_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+      "datacap_weekly_allocation": "1PiB",
+      "requested_amount": "15PiB",
+      "website": "TODO",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-10-10 10:14:02.186486 UTC",
+      "initial_pr_number": 235,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-10-10 10:14:02.186510 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
