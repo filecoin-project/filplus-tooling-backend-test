@@ -38,12 +38,14 @@
           {
               "signing_address": "signing_address",
               "time_of_signature": "time_of_signature",
-              "message_cid": "message_cid"
+              "message_cid": "message_cid",
+              "username": "clriesco"
           },
           {
               "signing_address": "signing_address",
               "time_of_signature": "time_of_signature",
-              "message_cid": "message_cid"
+              "message_cid": "message_cid",
+              "username": "clriesco"
           }
         ]
       }
