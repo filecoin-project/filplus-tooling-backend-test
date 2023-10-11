@@ -9,6 +9,7 @@
       "data_owner_industry": "TODO",
       "data_owner_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
       "requested_amount": "15PiB",
+      "datacap_weekly_allocation": "1PiB",
       "website": "https://pangeo-data.github.io/pangeo-cmip6-cloud/",
       "social_media": "TODO"
     },
@@ -37,12 +38,14 @@
           {
             "signing_address": "signing_address",
             "time_of_signature": "time_of_signature",
-            "message_cid": "message_cid"
+            "message_cid": "message_cid",
+            "username": "clriesco"
           },
           {
             "signing_address": "signing_address",
             "time_of_signature": "time_of_signature",
-            "message_cid": "message_cid"
+            "message_cid": "message_cid",
+            "username": "clriesco"
           }
         ]
       }
