@@ -8,6 +8,7 @@
       "data_owner_region": "Afghanistan",
       "data_owner_industry": "TODO",
       "data_owner_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+      "datacap_weekly_allocation": "1PiB"
       "requested_amount": "15PiB",
       "website": "https://pangeo-data.github.io/pangeo-cmip6-cloud/",
       "social_media": "TODO"
@@ -18,7 +19,7 @@
       "initial_pr_number": 223,
       "validated_by": "filplus-github-bot-read-write[bot]",
       "first_allocation_time": "2023-10-09 09:18:59.589822 UTC",
-      "is_active": false,
+      "is_active": true,
       "time_of_new_state": "2023-10-09 09:18:59.589848 UTC"
     },
     "datacap_allocations": [
