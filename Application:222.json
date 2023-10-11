@@ -19,7 +19,7 @@
       "initial_pr_number": 223,
       "validated_by": "filplus-github-bot-read-write[bot]",
       "first_allocation_time": "2023-10-09 09:18:59.589822 UTC",
-      "is_active": true,
+      "is_active": false,
       "time_of_new_state": "2023-10-09 09:18:59.589848 UTC"
     },
     "datacap_allocations": [
