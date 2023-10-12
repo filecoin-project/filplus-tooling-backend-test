@@ -1,1 +1,26 @@
-{}
+{
+  "id": "251",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Stojan",
+      "data_owner_github_handle": "GithubHandleTodo",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "industry",
+      "data_owner_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+      "requested_amount": "15PiB",
+      "website": "https://pangeo-data.github.io/pangeo-cmip6-cloud/",
+      "social_media": "social_media"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-10-12 16:05:49.191427898 UTC",
+      "initial_pr_number": 252,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-10-12 16:05:49.191436173 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
