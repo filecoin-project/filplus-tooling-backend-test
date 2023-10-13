@@ -14,13 +14,13 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Proposal",
+      "state": "Approval",
       "validated_time": "2023-10-13 09:50:14.700602742 UTC",
       "validated_by": "jbesraa",
       "first_allocation_time": "2023-10-13 09:55:30.322008107 UTC",
       "is_active": true,
-      "time_of_new_state": "2023-10-13 10:31:33.027323920 UTC",
-      "current_allocation_id": "cee6aad1-fa70-42ff-b08a-27b76121396a"
+      "time_of_new_state": "2023-10-13 10:32:46.655733729 UTC",
+      "current_allocation_id": "036f40d5-b5a8-4148-9242-d68addd34663"
     },
     "datacap_allocations": [
       {
