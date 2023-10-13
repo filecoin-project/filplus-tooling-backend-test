@@ -29,7 +29,7 @@
           "request_type": "New",
           "client_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
           "created_at": "2023-10-12 16:07:36.943935030 UTC",
-          "is_active": true,
+          "is_active": false,
           "allocation_amount": "15PiB"
         },
         "signers": [
@@ -44,6 +44,18 @@
             "message_cid": "message_cid_here"
           }
         ]
+      },
+      {
+        "request_information": {
+          "actor": "filplus-github-bot-read-write[bot]",
+          "request_id": "random request id",
+          "request_type": "Refill",
+          "client_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+          "created_at": "2023-10-09 09:16:43.472003 UTC",
+          "is_active": true,
+          "allocation_amount": "21"
+        },
+        "signers": []
       }
     ]
   }
