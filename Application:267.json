@@ -14,14 +14,27 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "GovernanceReview",
+      "state": "Proposal",
       "validated_time": "2023-10-13 10:45:48.673496 UTC",
-      "validated_by": "",
+      "validated_by": "clriesco",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-13 10:45:48.673521 UTC",
-      "current_allocation_id": null
+      "time_of_new_state": "2023-10-13 10:49:23.578344 UTC",
+      "current_allocation_id": "53c6d3e5-b63f-457d-9bad-66a19f038cda"
     },
-    "datacap_allocations": []
+    "datacap_allocations": [
+      {
+        "request_information": {
+          "actor": "clriesco",
+          "id": "53c6d3e5-b63f-457d-9bad-66a19f038cda",
+          "request_type": "New",
+          "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+          "created_at": "2023-10-13 10:49:23.578276 UTC",
+          "is_active": true,
+          "allocation_amount": "15PiB"
+        },
+        "signers": []
+      }
+    ]
   }
 }
