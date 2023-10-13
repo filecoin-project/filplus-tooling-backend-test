@@ -97,8 +97,13 @@ async function processPullRequest(owner, repo, prNumber, githubToken) {
       return;
     }
 
-    if (fileContent?.info.application_lifecycle?.state === "Confirmed" &&
-        fileContent?.info.application_lifecycle?.first_allocation_time !== "") {
+    if (
+      fileContent?.info.application_lifecycle?.state === "Confirmed" && 
+        (
+          fileContent?.info.application_lifecycle?.first_allocation_time !== "" ||
+          fileContent?.info.application_lifecycle?.is_active === false 
+        )
+    ) {
       console.log("Conditions met for automatic merge.");
       await mergePullRequest(owner, repo, prNumber, githubToken);
     } else {
