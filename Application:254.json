@@ -51,7 +51,7 @@
       {
         "request_information": {
           "actor": "filplus-github-bot-read-write[bot]",
-          "request_id": "random request id",
+          "request_id": "refill 1",
           "request_type": "Refill",
           "client_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
           "created_at": "2023-10-09 09:16:43.472003 UTC",
