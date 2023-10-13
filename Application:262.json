@@ -14,13 +14,13 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Confirmed",
+      "state": "Proposal",
       "validated_time": "2023-10-13 09:50:14.700602742 UTC",
-      "validated_by": "jbesraa",
-      "first_allocation_time": "2023-10-13 09:55:30.322008107 UTC",
+      "validated_by": "Bot",
+      "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-13 09:55:30.322024047 UTC",
-      "current_allocation_id": "036f40d5-b5a8-4148-9242-d68addd34663"
+      "time_of_new_state": "2023-10-13 10:03:10.360440481 UTC",
+      "current_allocation_id": "85e57ca3-17b3-4f46-8376-5d60fdb087dd"
     },
     "datacap_allocations": [
       {
@@ -51,10 +51,10 @@
       {
         "request_information": {
           "actor": "SSA Bot",
-          "id": "6d54d8dc-9711-4032-817a-7fd826fdbece",
+          "id": "85e57ca3-17b3-4f46-8376-5d60fdb087dd",
           "request_type": "Refill",
           "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
-          "created_at": "2023-10-13 09:57:05.299413271 UTC",
+          "created_at": "2023-10-13 10:03:10.360453796 UTC",
           "is_active": true,
           "allocation_amount": "1"
         },
