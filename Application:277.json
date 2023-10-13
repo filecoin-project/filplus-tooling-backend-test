@@ -14,12 +14,12 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Approval",
+      "state": "Confirmed",
       "validated_time": "2023-10-13 11:37:32.140608 UTC",
       "validated_by": "clriesco",
-      "first_allocation_time": "2023-10-13 11:38:11.359166 UTC",
+      "first_allocation_time": "2023-10-13 13:51:42.061254 UTC",
       "is_active": true,
-      "time_of_new_state": "2023-10-13 13:51:29.808368 UTC",
+      "time_of_new_state": "2023-10-13 13:51:42.061290 UTC",
       "current_allocation_id": "199fc224-a195-4717-918a-90c8690f7cd3"
     },
     "datacap_allocations": [
@@ -55,10 +55,16 @@
           "request_type": "Refill",
           "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
           "created_at": "2023-10-13 11:46:12.734540 UTC",
-          "is_active": true,
+          "is_active": false,
           "allocation_amount": "512"
         },
         "signers": [
+          {
+            "signing_address": "signing_address_here",
+            "time_of_signature": "time_of_signature_here",
+            "message_cid": "message_cid_here",
+            "username": "clriesco"
+          },
           {
             "signing_address": "signing_address_here",
             "time_of_signature": "time_of_signature_here",
