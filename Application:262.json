@@ -14,12 +14,12 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Proposal",
+      "state": "Approval",
       "validated_time": "2023-10-13 09:50:14.700602742 UTC",
       "validated_by": "jbesraa",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-13 09:54:24.679370831 UTC",
+      "time_of_new_state": "2023-10-13 09:55:11.819427799 UTC",
       "current_allocation_id": "036f40d5-b5a8-4148-9242-d68addd34663"
     },
     "datacap_allocations": [
@@ -33,7 +33,14 @@
           "is_active": true,
           "allocation_amount": "15PiB"
         },
-        "signers": []
+        "signers": [
+          {
+            "signing_address": "signing_address_here",
+            "time_of_signature": "time_of_signature_here",
+            "message_cid": "message_cid_here",
+            "username": "jbesraa"
+          }
+        ]
       }
     ]
   }
