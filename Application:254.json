@@ -18,9 +18,9 @@
       "validated_time": "2023-10-13 08:07:24.241969 UTC",
       "initial_pr_number": 255,
       "validated_by": "jbesraa",
-      "first_allocation_time": "2023-10-13 08:17:29.001804 UTC",
+      "first_allocation_time": "2023-10-13 08:11:09.287374 UTC",
       "is_active": false,
-      "time_of_new_state": "2023-10-13 08:17:29.001833 UTC"
+      "time_of_new_state": "2023-10-13 08:11:09.287415 UTC"
     },
     "datacap_allocations": [
       {
@@ -51,27 +51,14 @@
       {
         "request_information": {
           "actor": "filplus-github-bot-read-write[bot]",
-          "request_id": "refill 1",
+          "request_id": "random request id",
           "request_type": "Refill",
           "client_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
           "created_at": "2023-10-09 09:16:43.472003 UTC",
           "is_active": true,
           "allocation_amount": "512"
         },
-        "signers": [
-          {
-            "signing_address": "signing_address_here",
-            "time_of_signature": "time_of_signature_here",
-            "message_cid": "message_cid_here",
-            "username": "clriesco"
-          },
-          {
-            "signing_address": "signing_address_here",
-            "time_of_signature": "time_of_signature_here",
-            "message_cid": "message_cid_here",
-            "username": "clriesco"
-          }
-        ]
+        "signers": []
       }
     ]
   }
