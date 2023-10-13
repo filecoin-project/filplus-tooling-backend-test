@@ -47,6 +47,18 @@
             "username": "jbesraa"
           }
         ]
+      },
+      {
+        "request_information": {
+          "actor": "SSA Bot",
+          "id": "6d54d8dc-9711-4032-817a-7fd826fdbece",
+          "request_type": "Refill",
+          "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+          "created_at": "2023-10-13 09:57:05.299413271 UTC",
+          "is_active": true,
+          "allocation_amount": "1"
+        },
+        "signers": []
       }
     ]
   }
