@@ -14,13 +14,13 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Confirmed",
+      "state": "Proposal",
       "validated_time": "2023-10-13 11:37:32.140609 UTC",
       "validated_by": "clriesco",
       "first_allocation_time": "2023-10-13 13:51:42.061254 UTC",
       "is_active": true,
-      "time_of_new_state": "2023-10-13 13:51:42.061290 UTC",
-      "current_allocation_id": "199fc224-a195-4717-918a-90c8690f7cd3"
+      "time_of_new_state": "2023-10-13 15:10:51.939029 UTC",
+      "current_allocation_id": "2fe2a105-ece7-4e8f-b392-0e778f3e872c"
     },
     "datacap_allocations": [
       {
@@ -56,7 +56,7 @@
           "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
           "created_at": "2023-10-13 11:46:12.734540 UTC",
           "is_active": false,
-          "allocation_amount": "512"
+          "allocation_amount": "4PiB"
         },
         "signers": [
           {
@@ -72,6 +72,18 @@
             "username": "clriesco"
           }
         ]
+      },
+      {
+        "request_information": {
+          "actor": "SSA Bot",
+          "id": "2fe2a105-ece7-4e8f-b392-0e778f3e872c",
+          "request_type": "Refill",
+          "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+          "created_at": "2023-10-13 15:10:51.939082 UTC",
+          "is_active": true,
+          "allocation_amount": "1PiB"
+        },
+        "signers": []
       }
     ]
   }
