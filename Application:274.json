@@ -14,14 +14,27 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "GovernanceReview",
+      "state": "Proposal",
       "validated_time": "2023-10-13 11:28:16.646926520 UTC",
-      "validated_by": "",
+      "validated_by": "jbesraa",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-13 11:28:16.646933313 UTC",
-      "current_allocation_id": null
+      "time_of_new_state": "2023-10-13 11:28:32.945001371 UTC",
+      "current_allocation_id": "a94585eb-1878-4698-8775-531dd9e95c99"
     },
-    "datacap_allocations": []
+    "datacap_allocations": [
+      {
+        "request_information": {
+          "actor": "jbesraa",
+          "id": "a94585eb-1878-4698-8775-531dd9e95c99",
+          "request_type": "New",
+          "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+          "created_at": "2023-10-13 11:28:32.944989860 UTC",
+          "is_active": true,
+          "allocation_amount": "15PiB"
+        },
+        "signers": []
+      }
+    ]
   }
 }
