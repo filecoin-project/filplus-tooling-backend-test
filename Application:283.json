@@ -17,8 +17,8 @@
       "state": "Confirmed",
       "validated_time": "2023-10-13 14:19:16.435452 UTC",
       "validated_by": "clriesco",
-      "first_allocation_time": "2023-10-13 14:20:01.192496 UTC",
-      "is_active": true,
+      "first_allocation_time": "2023-10-13 14:20:01.192497 UTC",
+      "is_active": false,
       "time_of_new_state": "2023-10-13 14:20:01.192531 UTC",
       "current_allocation_id": "327199e3-2e5e-4f0f-b362-6f89d0d840ab"
     },
