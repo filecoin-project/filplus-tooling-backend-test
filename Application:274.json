@@ -18,7 +18,7 @@
       "validated_time": "2023-10-13 11:28:16.646926520 UTC",
       "validated_by": "jbesraa",
       "first_allocation_time": "2023-10-13 11:29:27.373783813 UTC",
-      "is_active": true,
+      "is_active": false,
       "time_of_new_state": "2023-10-13 11:29:27.373794223 UTC",
       "current_allocation_id": "a94585eb-1878-4698-8775-531dd9e95c99"
     },
