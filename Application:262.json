@@ -14,12 +14,12 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Approval",
+      "state": "Confirmed",
       "validated_time": "2023-10-13 09:50:14.700602742 UTC",
       "validated_by": "jbesraa",
       "first_allocation_time": "2023-10-13 09:55:30.322008107 UTC",
-      "is_active": true,
-      "time_of_new_state": "2023-10-13 10:32:46.655733729 UTC",
+      "is_active": false,
+      "time_of_new_state": "2023-10-13 09:55:30.322024047 UTC",
       "current_allocation_id": "036f40d5-b5a8-4148-9242-d68addd34663"
     },
     "datacap_allocations": [
@@ -47,18 +47,6 @@
             "username": "jbesraa"
           }
         ]
-      },
-      {
-        "request_information": {
-          "actor": "SSA Bot",
-          "id": "cee6aad1-fa70-42ff-b08a-27b76121396a",
-          "request_type": "Refill",
-          "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
-          "created_at": "2023-10-13 10:31:33.027336544 UTC",
-          "is_active": true,
-          "allocation_amount": "1"
-        },
-        "signers": []
       }
     ]
   }
