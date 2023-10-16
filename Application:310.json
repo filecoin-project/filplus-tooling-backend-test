@@ -13,14 +13,28 @@
       "social_media": "TODO"
     },
     "application_lifecycle": {
-      "state": "GovernanceReview",
+      "state": "Proposal",
       "validated_time": "2023-10-16 13:27:37.869815598 UTC",
       "initial_pr_number": 311,
-      "validated_by": "",
+      "validated_by": "jbesraa",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-16 13:27:37.869818656 UTC"
+      "time_of_new_state": "2023-10-16 13:30:22.252143343 UTC"
     },
-    "datacap_allocations": []
+    "datacap_allocations": [
+      {
+        "request_information": {
+          "actor": "jbesraa",
+          "uuid": "TODO",
+          "request_id": "random request id",
+          "request_type": "New",
+          "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+          "created_at": "2023-10-16 13:30:22.252133935 UTC",
+          "is_active": true,
+          "allocation_amount": "15PiB"
+        },
+        "signers": []
+      }
+    ]
   }
 }
