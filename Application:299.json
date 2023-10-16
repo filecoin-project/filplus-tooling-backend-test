@@ -31,7 +31,7 @@
           "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
           "created_at": "2023-10-16 08:43:16.879794 UTC",
           "is_active": false,
-          "allocation_amount": "1PiB"
+          "allocation_amount": "0.5PiB"
         },
         "signers": [
           {
