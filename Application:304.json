@@ -19,8 +19,8 @@
       "validated_by": "clriesco",
       "first_allocation_time": "2023-10-16 13:20:39.265344 UTC",
       "is_active": true,
-      "time_of_new_state": "2023-10-16 13:21:27.412335 UTC",
-      "current_allocation_id": "9ad84517-6b63-4e9b-a815-4b39bc301dd4"
+      "time_of_new_state": "2023-10-16 13:24:35.742515 UTC",
+      "current_allocation_id": "ea92c28f-5f1d-4e52-82b6-9b58e6a1023e"
     },
     "datacap_allocations": [
       {
@@ -51,10 +51,10 @@
       {
         "request_information": {
           "actor": "SSA Bot",
-          "id": "9ad84517-6b63-4e9b-a815-4b39bc301dd4",
+          "id": "ea92c28f-5f1d-4e52-82b6-9b58e6a1023e",
           "request_type": "Refill",
           "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
-          "created_at": "2023-10-16 13:21:27.412363 UTC",
+          "created_at": "2023-10-16 13:24:35.742568 UTC",
           "is_active": true,
           "allocation_amount": "512TiB"
         },
