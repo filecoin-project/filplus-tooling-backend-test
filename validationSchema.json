@@ -7,7 +7,7 @@
     },
     "_type": {
       "type": "string",
-      "enum": ["da", "ldn-v3", "e-fil"]
+      "enum": ["da", "ldn", "e-fil"]
     },
     "info": {
       "type": "object",
