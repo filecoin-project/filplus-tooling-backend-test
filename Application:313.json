@@ -14,12 +14,12 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Proposal",
+      "state": "Approval",
       "validated_time": "2023-10-16 13:58:21.411919 UTC",
       "validated_by": "clriesco",
       "first_allocation_time": "2023-10-16 14:02:51.743295 UTC",
       "is_active": true,
-      "time_of_new_state": "2023-10-16 14:06:20.460504 UTC",
+      "time_of_new_state": "2023-10-16 14:07:40.465077 UTC",
       "current_allocation_id": "72cc65fd-f8bd-46fa-b2ab-7e7cab087e7c"
     },
     "datacap_allocations": [
@@ -58,7 +58,14 @@
           "is_active": true,
           "allocation_amount": "512TiB"
         },
-        "signers": []
+        "signers": [
+          {
+            "signing_address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
+            "time_of_signature": "2023-10-16 14:07:39.232000000 UTC",
+            "message_cid": "bafy2bzacearzzqjqad5h4iwqe67hzvjh6qylfzhtruk67fyge5agchq4oglgc",
+            "username": "clriesco"
+          }
+        ]
       }
     ]
   }
