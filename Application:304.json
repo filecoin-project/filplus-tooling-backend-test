@@ -14,12 +14,12 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Approval",
+      "state": "Confirmed",
       "validated_time": "2023-10-16 13:17:47.332213 UTC",
       "validated_by": "clriesco",
-      "first_allocation_time": "2023-10-16 13:20:39.265344 UTC",
+      "first_allocation_time": "2023-10-16 13:25:51.815808 UTC",
       "is_active": true,
-      "time_of_new_state": "2023-10-16 13:25:20.644078 UTC",
+      "time_of_new_state": "2023-10-16 13:25:51.815847 UTC",
       "current_allocation_id": "ea92c28f-5f1d-4e52-82b6-9b58e6a1023e"
     },
     "datacap_allocations": [
@@ -55,7 +55,7 @@
           "request_type": "Refill",
           "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
           "created_at": "2023-10-16 13:24:35.742568 UTC",
-          "is_active": true,
+          "is_active": false,
           "allocation_amount": "512TiB"
         },
         "signers": [
@@ -63,6 +63,12 @@
             "signing_address": "f1hqrkc2yn2upnv5yj7ijfqwssk2gylrzsozascsy",
             "time_of_signature": "2023-10-16 13:25:19.455000000 UTC",
             "message_cid": "bafy2bzacea4sc7y2ct3ab5tihojk7tbjmf5oyepvod53nirv2474qu7ipecou",
+            "username": "clriesco"
+          },
+          {
+            "signing_address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
+            "time_of_signature": "2023-10-16 13:25:50.397000000 UTC",
+            "message_cid": "bafy2bzacec3oec37hrg7fj7y35iqzagw7mrhrzruj5smbnooinb6jq2j7dpnc",
             "username": "clriesco"
           }
         ]
