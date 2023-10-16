@@ -1,1 +1,26 @@
-{}
+{
+  "id": "310",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Charly",
+      "data_owner_github_handle": "GithubHandleTodo",
+      "data_owner_region": "Afghanistan",
+      "data_owner_industry": "TODO",
+      "data_owner_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+      "requested_amount": "15PiB",
+      "website": "https://pangeo-data.github.io/pangeo-cmip6-cloud/",
+      "social_media": "TODO"
+    },
+    "application_lifecycle": {
+      "state": "GovernanceReview",
+      "validated_time": "2023-10-16 13:27:37.869815598 UTC",
+      "initial_pr_number": 311,
+      "validated_by": "",
+      "first_allocation_time": "",
+      "is_active": true,
+      "time_of_new_state": "2023-10-16 13:27:37.869818656 UTC"
+    },
+    "datacap_allocations": []
+  }
+}
