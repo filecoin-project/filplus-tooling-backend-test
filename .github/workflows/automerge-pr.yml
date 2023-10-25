@@ -1,3 +1,10 @@
+# This workflow will automerge a pull request when some conditions are met.
+# Use Cases:
+# - When an application (new or refill) is proposed and approved by two notaries.
+#     · application.info.application_lifecycle.state == 'Confirmed'
+#     · application.info.application_lifecycle.first_allocation_time != ''
+# - When an application has reached its total datacap and the SSA bot marked it as inactive
+#     · application.info.application_lifecycle.is_active == false
 name: Automerge Pull Request
 
 on:
