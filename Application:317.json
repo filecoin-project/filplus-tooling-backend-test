@@ -14,7 +14,7 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Approval",
+      "state": "Proposal",
       "validated_time": "2023-10-25 07:07:10.795522 UTC",
       "validated_by": "clriesco",
       "first_allocation_time": "",
@@ -34,12 +34,6 @@
           "allocation_amount": "1PiB"
         },
         "signers": [
-          {
-            "signing_address": "f1hqrkc2yn2upnv5yj7ijfqwssk2gylrzsozascsy",
-            "time_of_signature": "2023-10-25 09:50:56.464000000 UTC",
-            "message_cid": "",
-            "username": "clriesco"
-          }
         ]
       }
     ]
