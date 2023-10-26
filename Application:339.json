@@ -1,0 +1,53 @@
+{
+  "id": "339",
+  "_type": "LDN",
+  "info": {
+    "core_information": {
+      "data_owner_name": "Charly",
+      "data_owner_github_handle": "GithubHandleTodo",
+      "data_owner_region": "Spain",
+      "data_owner_industry": "industry",
+      "data_owner_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+      "datacap_weekly_allocation": "1PiB",
+      "requested_amount": "20PiB",
+      "website": "https://pangeo-data.github.io/pangeo-cmip6-cloud/",
+      "social_media": "social_media"
+    },
+    "application_lifecycle": {
+      "state": "Confirmed",
+      "validated_time": "2023-10-26 11:25:33.831789 UTC",
+      "validated_by": "clriesco",
+      "first_allocation_time": "2023-10-26 11:31:05.725792 UTC",
+      "is_active": true,
+      "time_of_new_state": "2023-10-26 11:31:05.725800 UTC",
+      "current_allocation_id": "3c93285d-9b5d-4f09-9c4c-a6e7fadf24cf"
+    },
+    "datacap_allocations": [
+      {
+        "request_information": {
+          "actor": "clriesco",
+          "id": "3c93285d-9b5d-4f09-9c4c-a6e7fadf24cf",
+          "request_type": "New",
+          "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
+          "created_at": "2023-10-26 11:25:50.427926 UTC",
+          "is_active": false,
+          "allocation_amount": "20PiB"
+        },
+        "signers": [
+          {
+            "signing_address": "f1hqrkc2yn2upnv5yj7ijfqwssk2gylrzsozascsy",
+            "time_of_signature": "2023-10-26 11:26:12.660000000 UTC",
+            "message_cid": "bafy2bzacedpvqvcmonb6nank6iartsrijxozvsouds77e75aerl7xy6xtal26",
+            "username": "clriesco"
+          },
+          {
+            "signing_address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
+            "time_of_signature": "2023-10-26 11:31:04.704000000 UTC",
+            "message_cid": "bafy2bzaceagxxl4ojraoh5gikj443qs3ym5tw2em2s7fsvb4rwgogiey43nig",
+            "username": "clriesco"
+          }
+        ]
+      }
+    ]
+  }
+}
