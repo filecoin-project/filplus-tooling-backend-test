@@ -14,14 +14,27 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "GovernanceReview",
+      "state": "Proposal",
       "validated_time": "2023-10-26 12:36:15.313294927 UTC",
-      "validated_by": "",
+      "validated_by": "filplus-github-bot-read-write[bot]",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-26 12:36:15.313307128 UTC",
-      "current_allocation_id": null
+      "time_of_new_state": "2023-10-26 12:36:17.278769072 UTC",
+      "current_allocation_id": "9a8e334e-f479-4ece-8aa0-2d4dbf5840ab"
     },
-    "datacap_allocations": []
+    "datacap_allocations": [
+      {
+        "request_information": {
+          "actor": "filplus-github-bot-read-write[bot]",
+          "id": "9a8e334e-f479-4ece-8aa0-2d4dbf5840ab",
+          "request_type": "New",
+          "client_address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+          "created_at": "2023-10-26 12:36:17.278745370 UTC",
+          "is_active": true,
+          "allocation_amount": "15PiB"
+        },
+        "signers": []
+      }
+    ]
   }
 }
