@@ -9,7 +9,7 @@
       "data_owner_industry": "industry",
       "data_owner_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
       "datacap_weekly_allocation": "1PiB",
-      "requested_amount": "15PiB",
+      "requested_amount": "14PiB",
       "website": "https://pangeo-data.github.io/pangeo-cmip6-cloud/",
       "social_media": "social_media"
     },
@@ -31,7 +31,7 @@
           "client_address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
           "created_at": "2023-10-26 11:16:05.938807 UTC",
           "is_active": true,
-          "allocation_amount": "15PiB"
+          "allocation_amount": "14PiB"
         },
         "signers": []
       }
