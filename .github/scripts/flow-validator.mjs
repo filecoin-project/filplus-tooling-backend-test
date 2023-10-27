@@ -8,12 +8,12 @@
  *  · application.info.application_lifecycle.current_allocation_id must be empty
  *  · application.info.datacap_allocations array must be empty
  * - When an aplication is in some other state
- *  · actor must be filplus-github-bot-read-write
+ *  · actor must be filplus-github-bot-read-write[bot]
  */
 
 import axios from "axios";
 
-const FILPLUS_BOT="filplus-github-bot-read-write";
+const FILPLUS_BOT="filplus-github-bot-read-write[bot]";
 
 /**
  * This is the main function that will be executed by the workflow and it will validate the application flow
@@ -73,7 +73,6 @@ async function fetchLastCommitAuthor(owner, repo, prNumber, githubToken) {
 
   try {
     const { data: commits } = await axios.get(url, { headers });
-    console.log(commits);
     const lastCommit = commits[commits.length - 1];
     return lastCommit.author.login;
   } catch (err) {
