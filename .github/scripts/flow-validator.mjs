@@ -51,7 +51,7 @@ async function processPullRequest(owner, repo, prNumber, githubToken) {
     throw new Error('Error fetching file content.');
   }
 
-  application?.info?.application_lifecycle.state == 'Submitted' 
+  application?.info?.application_lifecycle?.state == 'Submitted' 
     ? await validateSubmittedState(application)
     : await validateOtherState(lastCommitAuthor);
 
