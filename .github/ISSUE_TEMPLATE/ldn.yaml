@@ -32,12 +32,12 @@ body:
       # Client Info
 - type: input
   attributes:
-      label: Applicant
+    label: Name
   validations:
     required: true
 - type: dropdown
   attributes:
-    label: Data Owner Country/Region
+    label: Region
     options:
       - Afghanistan
       - Åland Islands
@@ -288,11 +288,6 @@ body:
       - Yemen
       - Zambia
       - Zimbabwe
-  validations:
-    required: true
-- type: input
-  attributes:
-    label: Name
   validations:
     required: true
 - type: input
