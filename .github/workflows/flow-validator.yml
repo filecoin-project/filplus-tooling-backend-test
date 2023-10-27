@@ -32,6 +32,9 @@ jobs:
 
     - name: Install Dependencies
       run: npm install axios
+      
+    - name: List directory contents
+      run: ls -R .github/scripts
 
     - name: Run Script
       env:
