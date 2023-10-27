@@ -12,9 +12,9 @@ body:
   attributes:
     value: |
       # Application Info
-  - type: dropdown
-    id: version
-    attributes:
+- type: dropdown
+  id: version
+  attributes:
       label: Version
       description: Schema File Version
       options:
