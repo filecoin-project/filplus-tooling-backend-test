@@ -1,4 +1,7 @@
-name: LDN Application
+name: Large Dataset Datacap Application
+description: Clients should use this application form to request a DataCap allocation via a LDN for a dataset
+title: "[DataCap Application] <Organization> - <Project Name>"
+labels: ''
 body:
 - type: markdown
   attributes:
