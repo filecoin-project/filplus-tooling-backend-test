@@ -14,12 +14,12 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "Proposal",
+      "state": "Approval",
       "validated_time": "2023-10-27 07:42:32.172064583 UTC",
       "validated_by": "filplus-github-bot-read-write[bot]",
       "first_allocation_time": "",
       "is_active": true,
-      "time_of_new_state": "2023-10-27 07:42:34.102174150 UTC",
+      "time_of_new_state": "2023-10-27 07:42:36.850521121 UTC",
       "current_allocation_id": "4f1fb256-01af-4d39-afa1-e478b7573709"
     },
     "datacap_allocations": [
@@ -33,7 +33,14 @@
           "is_active": true,
           "allocation_amount": "15PiB"
         },
-        "signers": []
+        "signers": [
+          {
+            "signing_address": "signing_address",
+            "time_of_signature": "time_of_signature",
+            "message_cid": "message_cid",
+            "username": "gh_username"
+          }
+        ]
       }
     ]
   }
