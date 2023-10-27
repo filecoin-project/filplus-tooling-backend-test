@@ -392,5 +392,49 @@ body:
       gainst this list in the future
   validations:
     required: true
+- type: markdown
+  attributes:
+    value: |
+      # Datacap Info
+- type: dropdown
+  attributes:
+    label: Group
+  options:
+    - ldn-v3
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Type
+  options:
+    - Slingshot
+    - Public, Open Dataset (Research/Non-P
+      rofit)
+    - Public, Open Commercial/Enterprise
+    - Private Commercial/Enterprise
+    - Private Non-Profit / Social impact
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Total Requested Amount
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: single size dataset
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Replicas
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Weekly Allocation
+  validations:
+    required: true
+
         
 
