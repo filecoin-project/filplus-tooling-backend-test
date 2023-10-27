@@ -14,8 +14,8 @@
       "social_media": "social_media"
     },
     "application_lifecycle": {
-      "state": "GovernanceReview",
-      "validated_time": "2023-10-27 11:18:44.747333 UTC",
+      "state": "Submitted",
+      "validated_time": "",
       "validated_by": "",
       "first_allocation_time": "",
       "is_active": true,
