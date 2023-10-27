@@ -75,7 +75,7 @@ async function fetchLastCommitAuthor(owner, repo, prNumber, githubToken) {
     const { data: commits } = await axios.get(url, { headers });
     console.log(commits);
     const lastCommit = commits[commits.length - 1];
-    return lastCommit.author.name;
+    return lastCommit.author.login;
   } catch (err) {
     console.error('Error fetching last commit author:', err);
     return null;
