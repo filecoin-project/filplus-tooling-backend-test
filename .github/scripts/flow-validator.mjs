@@ -69,6 +69,7 @@ async function fetchPRDetails(owner, repo, prNumber, githubToken) {
 
  try {
    const { data } = await axios.get(url, { headers });
+   console.log(data);
    const lastCommitAuthor = data.head.user.login;
    const filesUrl = data._links.self.href + '/files';
    const filesResponse = await axios.get(filesUrl, { headers });
