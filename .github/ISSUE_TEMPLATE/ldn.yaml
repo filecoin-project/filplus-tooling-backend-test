@@ -310,3 +310,87 @@ body:
     label: Role
   validations:
     required: true
+- type: markdown
+  attributes:
+    value: |
+      # Project Info
+- type: input
+  attributes:
+    label: Project ID
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Brief history of your project and organization
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Is this project associated with other projects/ecosystem stakeholders?
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Describe the data being stored onto Filecoin
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Where was the data currently stored in this dataset sourced from
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: How do you plan to prepare the dataset
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Please share a sample of the data (a lin
+      k to a file, an image, a table, etc., are good ways to do
+      this.
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Confirm that this is a public dataset th
+      at can be retrieved by anyone on the network (i.e., no spe
+      cific permissions or access rights are required to view th
+      e data)
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: What is the expected retrieval frequ
+      ency for this data
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: For how long do you plan to keep thi
+      s dataset stored on Filecoin
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: In which geographies do you plan on
+      making storage deals
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: How will you be distributing your da
+      ta to storage providers
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Please list the provider IDs and locatio
+      n of the storage providers you will be working with. Note
+      that it is a requirement to list a minimum of 5 unique pro
+      vider IDs, and that your client address will be verified a
+      gainst this list in the future
+  validations:
+    required: true
+        
+
