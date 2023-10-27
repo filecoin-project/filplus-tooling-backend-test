@@ -25,59 +25,83 @@ const FILPLUS_BOT="filplus-github-bot-read-write";
  * @returns 
  */
 async function processPullRequest(owner, repo, prNumber, githubToken) {
-  const prDetails = await fetchPRDetails(owner, repo, prNumber, githubToken);
-
-  if (!prDetails || !prDetails.changedFiles || !prDetails.lastCommitAuthor) {
-    throw new Error('Error fetching PR details.');
+  const lastCommitAuthor = await fetchLastCommitAuthor(owner, repo, prNumber, githubToken);
+  if (!lastCommitAuthor) {
+    throw new Error('Error fetching last commit author.');
   }
-  const changedFilenames = prDetails.changedFiles.map(file => file.filename);
+  console.log('Author of the last commit:', lastCommitAuthor);
+
+  const changedFiles = await fetchChangedFiles(owner, repo, prNumber, githubToken);
+  if (!changedFiles) {
+    throw new Error('Error fetching changed files.');
+  }
+
+  const changedFilenames = changedFiles.map(file => file.filename);
   
   console.log('List of files changed in PR:', changedFilenames);
-  console.log('Author of the last commit:', prDetails.lastCommitAuthor);
 
 
   if (changedFilenames.length > 1 || !changedFilenames[0].endsWith('.json')) {
     throw new Error('Either multiple files are modified or the modified file is not a JSON.');
   }
 
-  const application = await fetchJSONFileContent(owner, repo, prDetails.changedFiles[0].sha, githubToken);
+  const application = await fetchJSONFileContent(owner, repo, changedFiles[0].sha, githubToken);
 
   if (!application) {
     throw new Error('Error fetching file content.');
   }
 
-  application?.info?.application_lifecycle.state == 'Submitted' 
+  application?.info?.application_lifecycle?.state == 'Submitted' 
     ? await validateSubmittedState(application)
-    : await validateOtherState(prDetails.lastCommitAuthor);
+    : await validateOtherState(lastCommitAuthor);
 
 }
 
 /**
-* Fetches the list of filenames that have been changed and the author of the last commit
-* in a given pull request.
+* Fetches the author of the last commit in a given pull request.
 *
 * @param {string} owner - The owner of the GitHub repository.
 * @param {string} repo - The name of the GitHub repository.
 * @param {number} prNumber - The pull request number.
 * @param {string} githubToken - The GitHub API token.
-* @returns {Promise<Object|null>} - A promise resolving to an object containing the changed filenames
-*                                   and the author of the last commit, or null in case of error.
+* @returns {Promise<string|null>} - A promise resolving to the author of the last commit,
+*                                   or null in case of error.
 */
-async function fetchPRDetails(owner, repo, prNumber, githubToken) {
- const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}`;
- const headers = { Authorization: `token ${githubToken}` };
+async function fetchLastCommitAuthor(owner, repo, prNumber, githubToken) {
+  const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}/commits`;
+  const headers = { Authorization: `token ${githubToken}` };
 
- try {
-   const { data } = await axios.get(url, { headers });
-   console.log(data);
-   const lastCommitAuthor = data.head.user.login;
-   const filesUrl = data._links.self.href + '/files';
-   const filesResponse = await axios.get(filesUrl, { headers });
-   const changedFiles = filesResponse.data;
-   return { lastCommitAuthor, changedFiles };
- } catch (err) {
-  throw new Error('Error fetching PR details:', err);
- }
+  try {
+    const { data: commits } = await axios.get(url, { headers });
+    const lastCommit = commits[commits.length - 1];
+    return lastCommit.author.name;
+  } catch (err) {
+    console.error('Error fetching last commit author:', err);
+    return null;
+  }
+}
+
+/**
+* Fetches the list of filenames that have been changed in a given pull request.
+*
+* @param {string} owner - The owner of the GitHub repository.
+* @param {string} repo - The name of the GitHub repository.
+* @param {number} prNumber - The pull request number.
+* @param {string} githubToken - The GitHub API token.
+* @returns {Promise<Array|null>} - A promise resolving to an array containing the changed filenames,
+*                                  or null in case of error.
+*/
+async function fetchChangedFiles(owner, repo, prNumber, githubToken) {
+  const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}/files`;
+  const headers = { Authorization: `token ${githubToken}` };
+
+  try {
+    const { data } = await axios.get(url, { headers });
+    return data;
+  } catch (err) {
+    console.error('Error fetching changed files:', err);
+    return null;
+  }
 }
 
 /**
