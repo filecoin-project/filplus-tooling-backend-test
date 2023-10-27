@@ -109,19 +109,19 @@ async function fetchJSONFileContent(owner, repo, sha, githubToken) {
  */
 async function validateSubmittedState(application) {
   if(application?.info?.application_lifecycle?.validated_by) {
-    throw new Error('Application is already validated');
+    throw new Error('Application is already validated (Validated by field is not empty)');
   }
 
-  if(application?.info?.application_lifecycle?.validated_at) {
-    throw new Error('Application is already validated');
+  if(application?.info?.application_lifecycle?.validated_time) {
+    throw new Error('Application is already validated (Validated time field is not empty)');
   }
 
   if(application?.info?.application_lifecycle?.current_allocation_id) {
-    throw new Error('Application has an allocation assigned');
+    throw new Error('Application has an allocation assigned (Current allocation id field is not empty)');
   }
 
   if(application?.info?.datacap_allocations?.length > 0) {
-    throw new Error('Application has an allocation assigned');
+    throw new Error('Application has an allocation assigned (Datacap allocations array is not empty)');
   }
 
   console.log('Application is in a "Submitted" state and is valid');
