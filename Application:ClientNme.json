@@ -35,12 +35,12 @@
     "Weekly Allocation": "1GB"
   },
   "Lifecycle": {
-    "State": "Granted",
+    "State": "ReadyToSign",
     "Validated At": "2023-10-30 10:34:12.894949811 UTC",
     "Validated By": "actor_address",
     "Active": true,
-    "Updated At": "2023-10-30 12:16:55.172404258 UTC",
-    "Active Request ID": "22f7d64e-6b59-4909-90b3-5fc810b528ef",
+    "Updated At": "2023-10-30 13:26:34.260584161 UTC",
+    "Active Request ID": "7aa21d01-315d-4217-bc04-4aaa55b6167b",
     "On Chain Address": "f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1v",
     "Multisig Address": "MULTISIG ADDRESS"
   },
@@ -66,6 +66,17 @@
           "Message CID": "message_cid_here"
         }
       ]
+    },
+    {
+      "ID": "7aa21d01-315d-4217-bc04-4aaa55b6167b",
+      "Request Type": {
+        "Refill": 0
+      },
+      "Created At": "2023-10-30 13:26:34.260607184 UTC",
+      "Updated At": "2023-10-30 13:26:34.260609619 UTC",
+      "Active": true,
+      "Allocation Amount": "11",
+      "Signers": []
     }
   ]
 }
