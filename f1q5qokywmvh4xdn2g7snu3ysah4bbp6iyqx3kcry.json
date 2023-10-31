@@ -35,11 +35,11 @@
     "Weekly Allocation": "1GB"
   },
   "Lifecycle": {
-    "State": "StartSignDatacap",
+    "State": "Granted",
     "Validated At": "2023-10-31 20:25:45.875813 UTC",
     "Validated By": "clriesco",
     "Active": true,
-    "Updated At": "2023-10-31 20:28:00.838800 UTC",
+    "Updated At": "2023-10-31 20:29:51.454679 UTC",
     "Active Request ID": "8d687a95-d5f2-4928-b25d-5511e98e1de7",
     "On Chain Address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
     "Multisig Address": "MULTISIG ADDRESS"
@@ -50,7 +50,7 @@
       "Request Type": "First",
       "Created At": "2023-10-31 20:25:45.875825 UTC",
       "Updated At": "2023-10-31 20:25:45.875827 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "2PiB",
       "Signers": [
         {
@@ -58,6 +58,12 @@
           "Signing Address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
           "Created At": "2023-10-31 20:27:58.790000000 UTC",
           "Message CID": "bafy2bzaceaglua6c6o5fduqviq54hsxsshbvm2iofx2hs3rwejkqgk552v6ms"
+        },
+        {
+          "Github Username": "clriesco",
+          "Signing Address": "f1hqrkc2yn2upnv5yj7ijfqwssk2gylrzsozascsy",
+          "Created At": "2023-10-31 20:29:49.415000000 UTC",
+          "Message CID": "bafy2bzacedm3dgd2rusfkmo3pqgarvrrdvabq2q7ab4ojvctfv35ylcnmmxyo"
         }
       ]
     }
