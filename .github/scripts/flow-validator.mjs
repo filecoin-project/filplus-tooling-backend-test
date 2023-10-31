@@ -3,10 +3,10 @@
  * 
  * Use Cases:
  * - When an application is in "submitted state"
- *  · application.info.application_lifecycle.validated_by must be empty
- *  · application.info.application_lifecycle.validated_at must be empty
- *  · application.info.application_lifecycle.current_allocation_id must be empty
- *  · application.info.datacap_allocations array must be empty
+ *  · application.Lifecycle['Validated By'] must be empty
+ *  · application.Lifecycle['Validated At']  must be empty
+ *  · application.Lifecycle['Active Request ID']  must be empty
+ *  · application['Allocation Requests'] array must be empty
  * - When an aplication is in some other state
  *  · actor must be filplus-github-bot-read-write[bot]
  */
@@ -76,8 +76,7 @@ async function fetchLastCommitAuthor(owner, repo, prNumber, githubToken) {
     const lastCommit = commits[commits.length - 1];
     return lastCommit.author.login;
   } catch (err) {
-    console.error('Error fetching last commit author:', err);
-    return null;
+    throw new Error('Error fetching last commit author:', err);
   }
 }
 
@@ -99,8 +98,7 @@ async function fetchChangedFiles(owner, repo, prNumber, githubToken) {
     const { data } = await axios.get(url, { headers });
     return data;
   } catch (err) {
-    console.error('Error fetching changed files:', err);
-    return null;
+		throw new Error('Error fetching changed files:', err);
   }
 }
 
@@ -133,23 +131,25 @@ async function fetchJSONFileContent(owner, repo, sha, githubToken) {
  * @returns Boolean - True if the application is valid, false otherwise
  */
 async function validateSubmittedState(application) {
-  if(application?.info?.application_lifecycle?.validated_by) {
+  console.log('Application is in a "Submitted" state');
+
+  if(application?.Lifecycle?.['Validated by']) {
     throw new Error('Application is already validated (Validated by field is not empty)');
   }
 
-  if(application?.info?.application_lifecycle?.validated_time) {
+  if(application?.Lifecycle?.['Validated at']) {
     throw new Error('Application is already validated (Validated time field is not empty)');
   }
 
-  if(application?.info?.application_lifecycle?.current_allocation_id) {
+  if(application?.Lifecycle?.['Active Request ID']) {
     throw new Error('Application has an allocation assigned (Current allocation id field is not empty)');
   }
 
-  if(application?.info?.datacap_allocations?.length > 0) {
+  if(application?.['Allocation Requests'].length > 0) {
     throw new Error('Application has an allocation assigned (Datacap allocations array is not empty)');
   }
 
-  console.log('Application is in a "Submitted" state and is valid');
+  console.log('Application is valid');
 }
 
 /**
@@ -159,11 +159,12 @@ async function validateSubmittedState(application) {
  * @returns Boolean - True if the application is valid, false otherwise
  */
 async function validateOtherState(lastCommitAuthor) {
+  console.log('Application is in a state different than "Submitted"');
   if (lastCommitAuthor !== FILPLUS_BOT) {
     throw new Error(`Invalid author. Expected ${FILPLUS_BOT}, got ${lastCommitAuthor}`);
   }
+	console.log('Application is valid');
 
-  console.log('Application is in a state different than "Submitted" and is valid');
 }
 
 const owner = process.env.OWNER;
