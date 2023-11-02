@@ -35,11 +35,11 @@
     "Weekly Allocation": "5PiB"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
+    "State": "StartSignDatacap",
     "Validated At": "2023-11-02 10:03:58.552032 UTC",
     "Validated By": "clriesco",
     "Active": true,
-    "Updated At": "2023-11-02 10:20:05.899657 UTC",
+    "Updated At": "2023-11-02 10:22:24.366734 UTC",
     "Active Request ID": "6d9f11b9-22e2-4182-99bd-addbb32ddc0c",
     "On Chain Address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
     "Multisig Address": "MULTISIG ADDRESS"
@@ -74,7 +74,14 @@
       "Updated At": "2023-11-02 10:20:05.899673 UTC",
       "Active": true,
       "Allocation Amount": "512TiB",
-      "Signers": []
+      "Signers": [
+        {
+          "Github Username": "clriesco",
+          "Signing Address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
+          "Created At": "2023-11-02 10:22:22.140000000 UTC",
+          "Message CID": "bafy2bzacecsxzj6677dyjp4mogip2tzxzezfv4i2maf6utb3niq3hmuahq2de"
+        }
+      ]
     }
   ]
 }
