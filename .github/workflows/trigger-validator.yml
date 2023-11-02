@@ -18,13 +18,16 @@ jobs:
       - name: Call Backend to Validate
         id: validate
         run: |
-          BODY=$(curl --silent --header "Content-Type: application/json" \
+          # Realizar la llamada y capturar la respuesta
+          RESPONSE=$(curl --header "Content-Type: application/json" \
             --request POST \
             --data '{"pr_number": "'${{ github.event.pull_request.number }}'", "user_handle": "'${{ github.actor }}'"}' \
             "${DOMAIN}/application/trigger/validate")
+          echo "Response from validation: $RESPONSE"
 
-          # Check if the body of the response is true
-          if [ "$BODY" != "true" ]; then
+          VALID=$(echo $RESPONSE | jq '.valid')
+
+          if [ "$VALID" != "true" ]; then
             echo "Error: Validation returned false"
             exit 1
           fi
