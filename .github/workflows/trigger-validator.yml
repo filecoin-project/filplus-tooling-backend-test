@@ -18,7 +18,6 @@ jobs:
       - name: Call Backend to Validate
         id: validate
         run: |
-          # Realizar la llamada y capturar la respuesta
           RESPONSE=$(curl --header "Content-Type: application/json" \
             --request POST \
             --data '{"pr_number": "'${{ github.event.pull_request.number }}'", "user_handle": "'${{ github.actor }}'"}' \
