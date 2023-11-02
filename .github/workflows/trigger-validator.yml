@@ -1,4 +1,4 @@
-name: Test Pull Request Workflow
+name: Validate triggering application
 
 on:
   pull_request:
@@ -10,22 +10,15 @@ on:
       - submitted
 
 jobs:
-  extract-pr-number:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set PR Number as Environment Variable
-        run: echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
-      - name: Set User Handle as Environment Variable
-        run: echo "USER_HANDLE=${{ github.actor }}" >> $GITHUB_ENV
-
   call-backend:
-    needs: extract-pr-number
     runs-on: ubuntu-latest
+    env:
+      BACKEND_URL: ${{ secrets.DOMAIN }}
     steps:
       - name: Call Backend with PR Number and User Handle
         run: |
-          PR_NUMBER=${{ env.PR_NUMBER }}
-          USER_HANDLE=${{ env.USER_HANDLE }}
-          BACKEND_URL="https://286d-89-212-199-23.ngrok-free.app/validate_pr"
-          DATA="{\"pr_number\": \"$PR_NUMBER\", \"user_handle\": \"$USER_HANDLE\"}"
-          curl -X POST -H "Content-Type: application/json" -d "$DATA" $BACKEND_URL
+          echo "Validating triggering application from pr number ${{ github.event.pull_request.number }} and user handle ${{ github.actor }}"
+          curl --header "Content-Type: application/json" \
+              --request POST \
+              --data '{"pr_number": "'${{ github.event.pull_request.number }}'", "user_handle": "'${{ github.actor }}'"}' \
+              "${DOMAIN}/validate_pr"

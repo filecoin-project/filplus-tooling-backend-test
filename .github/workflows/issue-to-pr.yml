@@ -1,6 +1,5 @@
 name: Convert Issue To Pull Request
 
-# Run when new issues are created
 on:
   issues:
     types:
