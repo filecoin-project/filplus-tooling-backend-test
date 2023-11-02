@@ -22,7 +22,7 @@ jobs:
           RESPONSE=$(curl --header "Content-Type: application/json" \
             --request POST \
             --data '{"pr_number": "'${{ github.event.pull_request.number }}'", "user_handle": "'${{ github.actor }}'"}' \
-            "${DOMAIN}/application/propose/validate")
+            "${DOMAIN}/application/proposal/validate")
           echo "Response from validation: $RESPONSE"
 
           if [ "$RESPONSE" != "true" ]; then
