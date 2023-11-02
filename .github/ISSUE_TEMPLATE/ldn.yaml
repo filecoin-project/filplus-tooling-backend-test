@@ -422,7 +422,7 @@ body:
     required: true
 - type: input
   attributes:
-    label: single size dataset
+    label: Single Size Dataset
   validations:
     required: true
 - type: input
