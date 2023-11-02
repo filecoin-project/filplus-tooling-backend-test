@@ -10,12 +10,12 @@ on:
       - submitted
 
 jobs:
-  call-backend:
+  validate-proposal:
     runs-on: ubuntu-latest
     env:
       DOMAIN: ${{ secrets.DOMAIN }}
     steps:
-      - name: Call Backend to Validate
+      - name: Call Backend to Validate Application Proposal
         id: validate
         run: |
           echo "Calling backend to validate with pr_number: ${{ github.event.pull_request.number }} and user_handle: ${{ github.actor }}"
