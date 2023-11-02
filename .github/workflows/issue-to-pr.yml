@@ -1,6 +1,6 @@
 name: Convert Issue To Pull Request
 
-# Run when new issues created
+# Run when new issues are created
 on:
   issues:
     types:
@@ -9,6 +9,8 @@ on:
 jobs:
   listen-to-new-issue:
     runs-on: ubuntu-latest
+    env:
+      DOMAIN: ${{ secrets.DOMAIN }}
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -17,6 +19,7 @@ jobs:
         run: |
           echo "Converting Issue To PR"
           echo ${{ github.event.issue.number }}
-          sh .github/scripts/issue-to-pr.sh ${{ github.event.issue.number }}
-
-
+          curl --header "Content-Type: application/json" \
+               --request POST \
+               --data '{"application_id": "'${{ github.event.issue.number }}'"}' \
+               "${DOMAIN}/application"
