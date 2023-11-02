@@ -27,6 +27,7 @@ jobs:
         run: |
           echo "Searching for JSON files..."
           FILE_TO_VALIDATE=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.json$')
+          echo "$FILE_TO_VALIDATE"
           if [ -z "$FILE_TO_VALIDATE" ]; then
             echo "No JSON files found for validation."
             exit 0
