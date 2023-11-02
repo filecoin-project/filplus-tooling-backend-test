@@ -41,8 +41,7 @@ async function fetchJSONFileContent(owner, repo, sha, githubToken) {
     const fileContent = Buffer.from(data.content, 'base64').toString('utf-8');
     return JSON.parse(fileContent);
   } catch (err) {
-    console.error('Error fetching JSON file content:', err);
-    return null;
+    throw new Error('Error fetching JSON file content:', err);
   }
 }
 
@@ -64,7 +63,7 @@ async function mergePullRequest(owner, repo, prNumber, githubToken) {
     const { data } = await axios.put(url, {}, { headers });
     console.log('Successfully merged:', data);
   } catch (err) {
-    console.error('Error merging PR:', err);
+    throw new Error('Error merging PR:', err);
   }
 }
 
@@ -83,7 +82,7 @@ async function processPullRequest(owner, repo, prNumber, githubToken) {
   const changedFiles = await fetchChangedFilesInPR(owner, repo, prNumber, githubToken);
 
   if (!changedFiles) {
-    return;
+		throw new Error('No changed files.');
   }
   const changedFilenames = changedFiles.map(file => file.filename);
   
@@ -94,7 +93,7 @@ async function processPullRequest(owner, repo, prNumber, githubToken) {
     const fileContent = await fetchJSONFileContent(owner, repo, changedFiles[0].sha, githubToken);
 
     if (!fileContent) {
-      return;
+			throw new Error('No file content found.');
     }
 
     if (
@@ -107,10 +106,10 @@ async function processPullRequest(owner, repo, prNumber, githubToken) {
       console.log("Conditions met for automatic merge.");
       await mergePullRequest(owner, repo, prNumber, githubToken);
     } else {
-      console.log("Conditions not met for automatic merge.");
+      throw new Error("Conditions not met for automatic merge.");
     }
   } else {
-    console.log('Either multiple files are modified or the modified file is not a JSON.');
+    throw new Error('Either multiple files are modified or the modified file is not a JSON.');
   }
 }
 
@@ -119,4 +118,12 @@ const repo = process.env.REPO;
 const prNumber = process.env.PR_NUMBER;
 const githubToken = process.env.GITHUB_TOKEN;
 
-processPullRequest(owner, repo, prNumber, githubToken);
+(async function run() {
+  try {
+    await processPullRequest(owner, repo, prNumber, githubToken);
+    console.log('Automerge PR completed successfully.')
+  } catch (error) {
+    console.error(error.message);
+    process.exit(1);
+  }
+})();
