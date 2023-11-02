@@ -69,9 +69,7 @@
     },
     {
       "ID": "3ee792de-a5fa-43c3-bc84-54a294c9cf9e",
-      "Request Type": {
-        "Refill": 0
-      },
+      "Request Type": "Refill",
       "Created At": "2023-10-31 20:42:10.359661 UTC",
       "Updated At": "2023-10-31 20:42:10.359662 UTC",
       "Active": true,
