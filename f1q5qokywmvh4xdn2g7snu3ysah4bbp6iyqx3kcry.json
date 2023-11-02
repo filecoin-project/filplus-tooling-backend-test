@@ -21,7 +21,7 @@
     "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "",
     "What is the expected retrieval frequency for this data": "a",
     "For how long do you plan to keep this dataset stored on Filecoin": "",
-    "In which geographies do you plan on making storage deals": "kjl",
+    "In which geographies do you plan on making storage deals": "kjsl",
     "How will you be distributing your data to storage providers": "",
     "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "",
     "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": ""
