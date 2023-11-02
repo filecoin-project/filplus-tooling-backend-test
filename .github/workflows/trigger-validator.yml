@@ -13,7 +13,7 @@ jobs:
   call-backend:
     runs-on: ubuntu-latest
     env:
-      BACKEND_URL: ${{ secrets.DOMAIN }}
+      DOMAIN: ${{ secrets.DOMAIN }}
     steps:
       - name: Call Backend with PR Number and User Handle
         run: |
