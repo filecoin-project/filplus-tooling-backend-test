@@ -25,9 +25,7 @@ jobs:
             "${DOMAIN}/application/trigger/validate")
           echo "Response from validation: $RESPONSE"
 
-          VALID=$(echo $RESPONSE | jq '.valid')
-
-          if [ "$VALID" != "true" ]; then
+          if [ "$RESPONSE" != "true" ]; then
             echo "Error: Validation returned false"
             exit 1
           fi
