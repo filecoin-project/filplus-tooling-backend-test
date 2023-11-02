@@ -1,4 +1,4 @@
-name: Validate triggering application
+name: Validate Application Trigger
 
 on:
   pull_request:
