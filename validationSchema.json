@@ -57,12 +57,12 @@
       "properties": {
         "Type": { "type": "string" },
         "Data Type": { "type": "string" },
-        "Total requested amount": { "type": "string" },
-        "Single size dataset": { "type": "string" },
+        "Total Requested Amount": { "type": "string" },
+        "Single Size Dataset": { "type": "string" },
         "Replicas": { "type": "number" },
         "Weekly Allocation": { "type": "string" }
       },
-      "required": ["Type", "Data Type", "Total requested amount", "Single size dataset", "Replicas", "Weekly Allocation"]
+      "required": ["Type", "Data Type", "Total Requested Amount", "Single Size Dataset", "Replicas", "Weekly Allocation"]
     },
     "Lifecycle": {
       "type": "object",
