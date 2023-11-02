@@ -1,26 +1,31 @@
-name: Trigger Validator
+name: Test Pull Request Workflow
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
-
-env:
-  CARGO_TERM_COLOR: always
+    types:
+      - opened
+      - synchronize
+  pull_request_review:
+    types:
+      - submitted
 
 jobs:
-  build:
-
+  extract-pr-number:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Install fplus-cli
-      run: echo 'Install fplus-cli'
-      # run: cargo install fplus-cli
-    - name: Validate Trigger
-      run: echo 'Validate Trigger'  
-      # run: fplus-cli validate-trigger app_id
+      - name: Set PR Number as Environment Variable
+        run: echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+      - name: Set User Handle as Environment Variable
+        run: echo "USER_HANDLE=${{ github.actor }}" >> $GITHUB_ENV
 
-
+  call-backend:
+    needs: extract-pr-number
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Backend with PR Number and User Handle
+        run: |
+          PR_NUMBER=${{ env.PR_NUMBER }}
+          USER_HANDLE=${{ env.USER_HANDLE }}
+          BACKEND_URL="https://286d-89-212-199-23.ngrok-free.app/validate_pr"
+          DATA="{\"pr_number\": \"$PR_NUMBER\", \"user_handle\": \"$USER_HANDLE\"}"
+          curl -X POST -H "Content-Type: application/json" -d "$DATA" $BACKEND_URL
