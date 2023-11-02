@@ -6,7 +6,7 @@ on:
       - opened
 
 jobs:
-  listen-to-new-issue:
+  convert-issue-to-pr:
     runs-on: ubuntu-latest
     env:
       DOMAIN: ${{ secrets.DOMAIN }}
