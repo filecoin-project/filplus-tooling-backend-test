@@ -1,4 +1,4 @@
-name: Validate Proposing application
+name: Validate Approval application
 
 on:
   pull_request:
