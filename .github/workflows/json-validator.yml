@@ -2,8 +2,10 @@ name: Json Structure Validator
 
 on:
   pull_request:
-    paths:
-      - '**/*.json'
+    types:
+      - synchronize
+    branches:
+      - main
 
 jobs:
   validate_json:
