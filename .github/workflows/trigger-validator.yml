@@ -15,10 +15,20 @@ jobs:
     env:
       DOMAIN: ${{ secrets.DOMAIN }}
     steps:
-      - name: Call Backend with PR Number and User Handle
+      - name: Call Backend to Validate
+        id: validate
         run: |
-          echo "Validating triggering application from pr number ${{ github.event.pull_request.number }} and user handle ${{ github.actor }}"
-          curl --header "Content-Type: application/json" \
-              --request POST \
-              --data '{"pr_number": "'${{ github.event.pull_request.number }}'", "user_handle": "'${{ github.actor }}'"}' \
-              "${DOMAIN}/application/trigger/validate"
+          BODY=$(curl --silent --header "Content-Type: application/json" \
+            --request POST \
+            --data '{"pr_number": "'${{ github.event.pull_request.number }}'", "user_handle": "'${{ github.actor }}'"}' \
+            "${DOMAIN}/application/trigger/validate")
+
+          # Check if the body of the response is true
+          if [ "$BODY" != "true" ]; then
+            echo "Error: Validation returned false"
+            exit 1
+          fi
+
+      - name: Validation Success
+        if: steps.validate.outcome == 'success'
+        run: echo "Validation successful!"
