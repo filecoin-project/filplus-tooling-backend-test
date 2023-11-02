@@ -35,14 +35,24 @@
     "Weekly Allocation": "1PiB"
   },
   "Lifecycle": {
-    "State": "Submitted",
-    "Validated At": "",
-    "Validated By": "",
+    "State": "ReadyToSign",
+    "Validated At": "2023-11-02 08:39:47.203193 UTC",
+    "Validated By": "clriesco",
     "Active": true,
-    "Updated At": "2023-11-02 08:35:09.012265 UTC",
-    "Active Request ID": null,
+    "Updated At": "2023-11-02 08:39:47.203201 UTC",
+    "Active Request ID": "73f78f1a-59e7-4cfb-a567-41ceb51f5ba4",
     "On Chain Address": "f1x5pwzgywea6vnbq4fkvp2typvg7qnxrg6ni2sjy",
     "Multisig Address": "MULTISIG ADDRESS"
   },
-  "Allocation Requests": []
+  "Allocation Requests": [
+    {
+      "ID": "73f78f1a-59e7-4cfb-a567-41ceb51f5ba4",
+      "Request Type": "First",
+      "Created At": "2023-11-02 08:39:47.203204 UTC",
+      "Updated At": "2023-11-02 08:39:47.203206 UTC",
+      "Active": true,
+      "Allocation Amount": "9PiB",
+      "Signers": []
+    }
+  ]
 }
