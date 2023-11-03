@@ -35,12 +35,12 @@
     "Weekly Allocation": "3.5PiB"
   },
   "Lifecycle": {
-    "State": "Granted",
+    "State": "ReadyToSign",
     "Validated At": "2023-11-03 08:24:19.144782 UTC",
     "Validated By": "clriesco",
     "Active": true,
-    "Updated At": "2023-11-03 08:32:38.688795 UTC",
-    "Active Request ID": "63697fa5-da1e-47b2-a2f1-f47aa549f74b",
+    "Updated At": "2023-11-03 09:48:59.599285 UTC",
+    "Active Request ID": "55f62e0c-f4a6-4a87-a5b5-755c4732b680",
     "On Chain Address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
     "Multisig Address": "MULTISIG ADDRESS"
   },
@@ -88,6 +88,15 @@
           "Message CID": "bafy2bzacebwz6mv3rutbqnqrzou34ifvuaqrdngzvcsswszn7jxu5dfvtcvrc"
         }
       ]
+    },
+    {
+      "ID": "55f62e0c-f4a6-4a87-a5b5-755c4732b680",
+      "Request Type": "Refill",
+      "Created At": "2023-11-03 09:48:59.599537 UTC",
+      "Updated At": "2023-11-03 09:48:59.599546 UTC",
+      "Active": true,
+      "Allocation Amount": "512TiB",
+      "Signers": []
     }
   ]
 }
