@@ -38,9 +38,9 @@
     "State": "Granted",
     "Validated At": "2023-11-03 08:24:19.144782 UTC",
     "Validated By": "clriesco",
-    "Active": true,
+    "Active": false,
     "Updated At": "2023-11-03 09:52:03.414812 UTC",
-    "Active Request ID": "55f62e0c-f4a6-4a87-a5b5-755c4732b680",
+    "Active Request ID": null,
     "On Chain Address": "f1q5qokywmvh4xdn2g7snu3ysah4bbp6iyqx3kcry",
     "Multisig Address": "MULTISIG ADDRESS"
   },
