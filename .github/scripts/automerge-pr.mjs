@@ -99,8 +99,8 @@ async function processPullRequest(owner, repo, prNumber, githubToken) {
     if (
       fileContent?.Lifecycle?.State === "Granted" && 
         (
-          fileContent?.Lifecycle?.State['Validated At'] !== "" ||
-          fileContent?.Lifecycle?.State.Active === false 
+          fileContent?.Lifecycle?.['Validated At'] !== "" ||
+          fileContent?.Lifecycle?.Active === false 
         )
     ) {
       console.log("Conditions met for automatic merge.");
