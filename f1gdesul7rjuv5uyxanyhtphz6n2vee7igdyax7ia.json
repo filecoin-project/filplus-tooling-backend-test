@@ -35,7 +35,7 @@
     "Weekly Allocation": "2PiB"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
+    "State": "Submitted",
     "Validated At": "2023-11-03 14:02:02.380368 UTC",
     "Validated By": "clriesco",
     "Active": true,
@@ -48,7 +48,7 @@
     {
       "ID": "831c8d45-2db6-4c98-87dd-2dadefa3acc8",
       "Request Type": "First",
-      "Created At": "2023-11-03 14:02:02.380403 UTC",
+      "Created At": "2023-11-03 14:02:02.380423 UTC",
       "Updated At": "2023-11-03 14:02:02.380411 UTC",
       "Active": true,
       "Allocation Amount": "2PiB",
