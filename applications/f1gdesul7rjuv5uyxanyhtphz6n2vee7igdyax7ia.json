@@ -39,8 +39,8 @@
     "Validated At": "2023-11-09 10:12:57.745817906 UTC",
     "Validated By": "clriesco",
     "Active": true,
-    "Updated At": "2023-11-09 10:15:18.349624207 UTC",
-    "Active Request ID": "ccd8e2aa-2980-4946-97c7-0d316446e1bd",
+    "Updated At": "2023-11-09 10:20:06.321639588 UTC",
+    "Active Request ID": "2f262204-2ddd-4a9b-a78c-b834dc357ba2",
     "On Chain Address": "f1gdesul7rjuv5uyxanyhtphz6n2vee7igdyax7ia",
     "Multisig Address": "MULTISIG ADDRESS"
   },
@@ -52,6 +52,28 @@
       "Updated At": "2023-11-09 10:12:57.745832113 UTC",
       "Active": false,
       "Allocation Amount": "2PiB",
+      "Signers": [
+        {
+          "Github Username": "jbesraa",
+          "Signing Address": "f1hqrkc2yn2upnv5yj7ijfqwssk2gylrzsozascsy",
+          "Created At": "time_of_signature_here",
+          "Message CID": "message_cid_here"
+        },
+        {
+          "Github Username": "jbesraa",
+          "Signing Address": "f1hqrkc2yn2upnv5yj7ijfqwssk2gylrzsozascsy",
+          "Created At": "time_of_signature_here",
+          "Message CID": "message_cid_here"
+        }
+      ]
+    },
+    {
+      "ID": "2f262204-2ddd-4a9b-a78c-b834dc357ba2",
+      "Request Type": "Refill",
+      "Created At": "2023-11-09 10:18:15.705205494 UTC",
+      "Updated At": "2023-11-09 10:18:15.705207447 UTC",
+      "Active": false,
+      "Allocation Amount": "11",
       "Signers": [
         {
           "Github Username": "jbesraa",
