@@ -1,2 +1,4 @@
 .vscode
 /lotus-tools-node/.env
+/lotus-tools-node/node_modules
+/lotus-tools-node/package-lock.json
