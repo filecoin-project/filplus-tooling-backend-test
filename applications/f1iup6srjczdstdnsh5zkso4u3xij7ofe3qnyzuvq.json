@@ -35,11 +35,11 @@
     "Weekly Allocation": "1PiB"
   },
   "Lifecycle": {
-    "State": "StartSignDatacap",
+    "State": "Granted",
     "Validated At": "2023-11-16 08:48:23.894307781 UTC",
     "Validated By": "actor_address",
     "Active": true,
-    "Updated At": "2023-11-16 08:48:33.778406970 UTC",
+    "Updated At": "2023-11-16 08:48:43.707380683 UTC",
     "Active Request ID": "a516aeb1-f88c-4352-8f29-1c46bfbc362d",
     "On Chain Address": "f1iup6srjczdstdnsh5zkso4u3xij7ofe3qnyzuvq",
     "Multisig Address": "MULTISIG ADDRESS"
@@ -50,9 +50,15 @@
       "Request Type": "First",
       "Created At": "2023-11-16 08:48:23.894318521 UTC",
       "Updated At": "2023-11-16 08:48:23.894319894 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "1PiB",
       "Signers": [
+        {
+          "Github Username": "gh_username",
+          "Signing Address": "signing_address",
+          "Created At": "time_of_signature",
+          "Message CID": "message_cid"
+        },
         {
           "Github Username": "gh_username",
           "Signing Address": "signing_address",
