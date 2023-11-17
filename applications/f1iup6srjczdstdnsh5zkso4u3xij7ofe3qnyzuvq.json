@@ -35,14 +35,24 @@
     "Weekly Allocation": "1PiB"
   },
   "Lifecycle": {
-    "State": "Submitted",
-    "Validated At": "",
-    "Validated By": "",
+    "State": "ReadyToSign",
+    "Validated At": "2023-11-17 09:36:50.596744915 UTC",
+    "Validated By": "actor_address",
     "Active": true,
-    "Updated At": "2023-11-17 09:36:42.439446470 UTC",
-    "Active Request ID": "",
+    "Updated At": "2023-11-17 09:36:50.596759915 UTC",
+    "Active Request ID": "beb910f5-37cc-420c-99b3-6bc94cb99da7",
     "On Chain Address": "f1iup6srjczdstdnsh5zkso4u3xij7ofe3qnyzuvq",
     "Multisig Address": "MULTISIG ADDRESS"
   },
-  "Allocation Requests": []
+  "Allocation Requests": [
+    {
+      "ID": "beb910f5-37cc-420c-99b3-6bc94cb99da7",
+      "Request Type": "First",
+      "Created At": "2023-11-17 09:36:50.596764415 UTC",
+      "Updated At": "2023-11-17 09:36:50.596767115 UTC",
+      "Active": true,
+      "Allocation Amount": "1PiB",
+      "Signers": []
+    }
+  ]
 }
