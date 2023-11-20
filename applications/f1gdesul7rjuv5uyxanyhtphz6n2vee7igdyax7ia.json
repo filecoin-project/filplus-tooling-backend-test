@@ -32,7 +32,7 @@
     "Total Requested Amount": "4PiB",
     "Single Size Dataset": "1PiB",
     "Replicas": 2,
-    "Weekly Allocation": "1.4PiB"
+    "Weekly Allocation": "1.5PiB"
   },
   "Lifecycle": {
     "State": "StartSignDatacap",
