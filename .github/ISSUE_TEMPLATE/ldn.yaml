@@ -505,7 +505,7 @@ body:
     description: This amount is usually between 1 TiB and 1000 TiB - i.e - 500GiB, 1000TiB, 2.5PiB
   validations:
     required: true
-    - type: checkboxes
+- type: checkboxes
   attributes:
     label: Custom multisig 
     description: Check this box off if you have explicitly been asked to by the governance team.
