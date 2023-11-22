@@ -38,14 +38,24 @@
     "Identifier": "0"
   },
   "Lifecycle": {
-    "State": "Submitted",
-    "Validated At": "",
-    "Validated By": "",
+    "State": "ReadyToSign",
+    "Validated At": "2023-11-22 12:50:02.777583077 UTC",
+    "Validated By": "actor_address",
     "Active": true,
-    "Updated At": "2023-11-22 12:49:53.967890675 UTC",
-    "Active Request ID": "",
+    "Updated At": "2023-11-22 12:50:02.777598577 UTC",
+    "Active Request ID": "01e50b37-ec27-48ef-9e3e-3b1421bc8e57",
     "On Chain Address": "f1iup6srjczdstdnsh5zkso4u3xij7ofe3qnyzuvq",
     "Multisig Address": ""
   },
-  "Allocation Requests": []
+  "Allocation Requests": [
+    {
+      "ID": "01e50b37-ec27-48ef-9e3e-3b1421bc8e57",
+      "Request Type": "First",
+      "Created At": "2023-11-22 12:50:02.777602577 UTC",
+      "Updated At": "2023-11-22 12:50:02.777604777 UTC",
+      "Active": true,
+      "Allocation Amount": "1PiB",
+      "Signers": []
+    }
+  ]
 }
