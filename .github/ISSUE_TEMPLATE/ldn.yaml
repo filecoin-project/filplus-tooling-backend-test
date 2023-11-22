@@ -505,6 +505,18 @@ body:
     description: This amount is usually between 1 TiB and 1000 TiB - i.e - 500GiB, 1000TiB, 2.5PiB
   validations:
     required: true
+    - type: checkboxes
+  attributes:
+    label: Custom multisig 
+    description: Check this box off if you have explicitly been asked to by the governance team.
+    options:
+      - label: "Use Custom Multisig"
+- type: input
+  attributes:
+    label: Identifier
+    description: If needed Filecoin team will fill up this field later on. You can skip this field.
+  validations:
+    required: false
 
         
 
