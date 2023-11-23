@@ -456,8 +456,8 @@ body:
   attributes:
     label: Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)
     options:
-      - No
-      - Yes
+      - "No"
+      - "Yes"
 - type: markdown
   attributes:
     value: |
