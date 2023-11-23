@@ -452,6 +452,12 @@ body:
     label: Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future
   validations:
     required: true
+- type: dropdown
+  attributes:
+    label: Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)
+    options:
+      - No
+      - Yes
 - type: markdown
   attributes:
     value: |
