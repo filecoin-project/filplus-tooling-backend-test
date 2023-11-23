@@ -458,6 +458,8 @@ body:
     options:
       - "No"
       - "Yes"
+  validations:
+    required: true
 - type: markdown
   attributes:
     value: |
