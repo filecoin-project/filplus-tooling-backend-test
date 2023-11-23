@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "ID": "f1y5mkyvzsfxsapuecbbs4hrrmio2te6ajdqpgedq",
+  "Issue Number": "644",
+  "Client": {
+    "Name": "Stojan",
+    "Region": "Slovenia",
+    "Industry": "Web3 / Crypto",
+    "Website": "my site",
+    "Social Media": "sm",
+    "Social Media Type": "Slack",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Project Id": "Pr Id",
+    "Brief history of your project and organization": "His",
+    "Is this project associated with other projects/ecosystem stakeholders?": "sta",
+    "Describe the data being stored onto Filecoin": "des",
+    "Where was the data currently stored in this dataset sourced from} ": "AWS Cloud",
+    "How do you plan to prepare the dataset": "plan",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "asodk",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "yes",
+    "What is the expected retrieval frequency for this data": "Weekly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "Less than 1 year",
+    "In which geographies do you plan on making storage deals": "Greater China, Europe",
+    "How will you be distributing your data to storage providers": "HTTP or FTP server, IPFS",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "id,id,id2,id3,id4,id5",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "2.5PiB",
+    "Single Size Dataset": "500GiB",
+    "Replicas": 4,
+    "Weekly Allocation": "2TiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2023-11-23 21:29:57.870468700 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1y5mkyvzsfxsapuecbbs4hrrmio2te6ajdqpgedq",
+    "Multisig Address": ""
+  },
+  "Allocation Requests": []
+}
