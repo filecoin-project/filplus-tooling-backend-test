@@ -30,7 +30,7 @@
   "Datacap": {
     "Type": "ldn-v3",
     "Data Type": "Public, Open Commercial/Enterprise",
-    "Total Requested Amount": "2.25",
+    "Total Requested Amount": "2.25PiB",
     "Single Size Dataset": "2PiB",
     "Replicas": 4,
     "Weekly Allocation": "2PiB"
