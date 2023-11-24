@@ -30,18 +30,18 @@
   "Datacap": {
     "Type": "ldn-v3",
     "Data Type": "Public, Open Commercial/Enterprise",
-    "Total Requested Amount": "2.25PiB",
+    "Total Requested Amount": "2.25",
     "Single Size Dataset": "2PiB",
     "Replicas": 4,
     "Weekly Allocation": "2PiB"
   },
   "Lifecycle": {
-    "State": "Granted",
+    "State": "ReadyToSign",
     "Validated At": "2023-11-24 09:36:58.801590564 UTC",
     "Validated By": "clriesco",
     "Active": true,
-    "Updated At": "2023-11-24 09:42:39.039587088 UTC",
-    "Active Request ID": "97d7c3db-66ec-42b9-9c02-74ee70c7a46d",
+    "Updated At": "2023-11-24 10:50:01.019940033 UTC",
+    "Active Request ID": "b3935351-1c81-44c9-aefa-4982fff94a11",
     "On Chain Address": "f13y7egp3cu7o6eog5fliizqt24f5o6qwnedbdq5a",
     "Multisig Address": ""
   },
@@ -67,6 +67,15 @@
           "Message CID": "bafy2bzaceazwhryuxezs3lpdmxzouvu33rd7dtc5lygzp7h3vtjwjzjzipovg"
         }
       ]
+    },
+    {
+      "ID": "b3935351-1c81-44c9-aefa-4982fff94a11",
+      "Request Type": "Refill",
+      "Created At": "2023-11-24 10:50:01.019945659 UTC",
+      "Updated At": "2023-11-24 10:50:01.019946507 UTC",
+      "Active": true,
+      "Allocation Amount": "256TiB",
+      "Signers": []
     }
   ]
 }
