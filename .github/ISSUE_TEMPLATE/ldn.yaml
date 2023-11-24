@@ -482,18 +482,38 @@ body:
       - Private Non-Profit / Social impact
   validations:
     required: true
+- type: dropdown
+  attributes:
+    label: Total Requested Type
+    options:
+      - GiB
+      - TiB
+      - PiB
+  validations:
+    required: true
 - type: input
   attributes:
     label: Total Requested Amount
-    description: i.e - 500GiB, 1000TiB, 2.5PiB
+    description: i.e - 2.5, 500, 1000
+  validations:
+    required: true
+    pattern: "^[0-9]*\\.?[0-9]+$"
+- type: dropdown
+  attributes:
+    label: Single Size Dataset Type
+    options:
+      - GiB
+      - TiB
+      - PiB
   validations:
     required: true
 - type: input
   attributes:
-    label: Single Size Dataset
-    description: i.e - 500GiB, 1000TiB, 2.5PiB
+    label: Single Size Dataset Amount
+    description: i.e - 2.5, 500, 1000
   validations:
     required: true
+    pattern: "^[0-9]*\\.?[0-9]+$"
 - type: dropdown
   attributes:
     label: Replicas
@@ -507,12 +527,22 @@ body:
       - 10
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
-    label: Weekly Allocation
-    description: This amount is usually between 1 TiB and 1000 TiB - i.e - 500GiB, 1000TiB, 2.5PiB
+    label: Weekly Allocation Type
+    options:
+      - GiB
+      - TiB
+      - PiB
   validations:
     required: true
+- type: input
+  attributes:
+    label: Weekly Allocation Amount
+    description: This amount is usually between 1 TiB and 1000 TiB - i.e - 500GiB, 1000TiB, 2.5PiB (only write the number here)
+  validations:
+    required: true
+    pattern: "^[0-9]*\\.?[0-9]+$"
 - type: checkboxes
   attributes:
     label: Custom multisig 
