@@ -36,11 +36,11 @@
     "Weekly Allocation": "2PiB"
   },
   "Lifecycle": {
-    "State": "StartSignDatacap",
+    "State": "Granted",
     "Validated At": "2023-11-27 08:39:16.239651167 UTC",
     "Validated By": "clriesco",
     "Active": true,
-    "Updated At": "2023-11-27 08:49:28.364870889 UTC",
+    "Updated At": "2023-11-27 08:54:21.090258587 UTC",
     "Active Request ID": "3f5ed80f-bd1d-48b7-b566-ac4d1a2b82a8",
     "On Chain Address": "f1iup6srjczdstdnsh5zkso4u3xij7ofe3qnyzuvq",
     "Multisig Address": ""
@@ -95,7 +95,7 @@
       "Request Type": "Refill",
       "Created At": "2023-11-27 08:48:42.218579816 UTC",
       "Updated At": "2023-11-27 08:48:42.218581367 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "10.23TiB",
       "Signers": [
         {
@@ -103,6 +103,12 @@
           "Signing Address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
           "Created At": "2023-11-27 08:49:27.276000000 UTC",
           "Message CID": "bafy2bzaceajk2hlnsjlfi6rv6shsmym6ybsizy2ectbeo2lo2ylldljpgndyk"
+        },
+        {
+          "Github Username": "kokal33",
+          "Signing Address": "f1j2v7jgg4twnh2y76l3atpbbd2vz7rt6pkxlg2my",
+          "Created At": "2023-11-27 08:54:20.848000000 UTC",
+          "Message CID": "bafy2bzacecrnifsoeboorqnbwsbasf6jurnghgarskqlni6db5cn3xyesfh22"
         }
       ]
     }
