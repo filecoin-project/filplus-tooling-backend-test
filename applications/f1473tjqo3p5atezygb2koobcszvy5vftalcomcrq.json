@@ -1,0 +1,53 @@
+{
+  "Version": 2,
+  "ID": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+  "Issue Number": "706",
+  "Client": {
+    "DataCap Applicant": "",
+    "Data Owner Name": "Owner",
+    "Data Owner Country/Region": "Slovenia",
+    "Data Owner Industry": "Web3 / Crypto",
+    "Website": "site.com",
+    "Social Media Handle": "mysm.com",
+    "Social Media Type": "Slack",
+    "Role": ""
+  },
+  "Project": {
+    "Project Id": "123",
+    "Share a brief history of your project and organization": "History",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "A lot of data",
+    "Where was the data currently stored in this dataset sourced from} ": "Google Cloud",
+    "How do you plan to prepare the dataset": "Prepare details",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "",
+    "What is the expected retrieval frequency for this data": "Daily",
+    "For how long do you plan to keep this dataset stored on Filecoin": "Less than 1 year",
+    "In which geographies do you plan on making storage deals": "Africa, South America",
+    "How will you be distributing your data to storage providers": "HTTP or FTP server",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": ""
+  },
+  "Datacap": {
+    "Group": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total amount of DataCap being requested": "2.5",
+    "Unit for total amount of DataCap being requested": "GiB",
+    "Expected size of single dataset (one copy)": "512",
+    "Unit for expected size of single dataset": "PiB",
+    "Number of Replicas to Store": 0,
+    "Weekly Allocation of DataCap Requested": "",
+    "Unit for Weekly Allocation of DataCap Requested": ""
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2023-12-12 15:11:18.759196800 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+    "Multisig Address": "false"
+  },
+  "Allocation Requests": []
+}
