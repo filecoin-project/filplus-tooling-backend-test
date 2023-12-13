@@ -37,14 +37,24 @@
     "Weekly allocation of DataCap requested": "1 "
   },
   "Lifecycle": {
-    "State": "Submitted",
-    "Validated At": "",
-    "Validated By": "",
+    "State": "ReadyToSign",
+    "Validated At": "2023-12-13 11:03:29.040978354 UTC",
+    "Validated By": "actor_address",
     "Active": true,
-    "Updated At": "2023-12-13 11:03:20.218322041 UTC",
-    "Active Request ID": "",
+    "Updated At": "2023-12-13 11:03:29.040995025 UTC",
+    "Active Request ID": "8af9425f-0f35-4b63-9c24-a3ce1420a333",
     "On Chain Address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
     "Multisig Address": "false"
   },
-  "Allocation Requests": []
+  "Allocation Requests": [
+    {
+      "ID": "8af9425f-0f35-4b63-9c24-a3ce1420a333",
+      "Request Type": "First",
+      "Created At": "2023-12-13 11:03:29.040999483 UTC",
+      "Updated At": "2023-12-13 11:03:29.041001547 UTC",
+      "Active": true,
+      "Allocation Amount": "1 ",
+      "Signers": []
+    }
+  ]
 }
