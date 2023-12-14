@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "ID": "f1ys5m675da4ao4vwefbewtyafuw3zhgemya6jnky",
+  "Issue Number": "777",
+  "Client": {
+    "Name": "name",
+    "Region": "Saint Barthélemy",
+    "Industry": "Education & Training",
+    "Website": "keyko.io",
+    "Social Media": "sm",
+    "Social Media Type": "Facebook",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Project Id": "111",
+    "Brief history of your project and organization": "project",
+    "Is this project associated with other projects/ecosystem stakeholders?": "Yes",
+    "Describe the data being stored onto Filecoin": "use case",
+    "Where was the data currently stored in this dataset sourced from} ": "AWS Cloud",
+    "How do you plan to prepare the dataset": "",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "",
+    "What is the expected retrieval frequency for this data": "Monthly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "2 to 3 years",
+    "In which geographies do you plan on making storage deals": "Greater China",
+    "How will you be distributing your data to storage providers": "IPFS",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": ""
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "20PiB",
+    "Single Size Dataset": "10PiB",
+    "Replicas": 7,
+    "Weekly Allocation": "10PiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2023-12-14 11:08:47.592567482 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1ys5m675da4ao4vwefbewtyafuw3zhgemya6jnky",
+    "Multisig Address": "false"
+  },
+  "Allocation Requests": []
+}
