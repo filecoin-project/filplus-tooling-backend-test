@@ -15,7 +15,7 @@
         "Website": { "type": "string" },
         "Social Media Handle": { "type": "string" },
         "Social Media Type": { "type": "string" },
-        "Role": { "type": "string" }
+        "What is your role related to the dataset": { "type": "string" }
       },
       "required": ["DataCap Applicant", "Data Owner Name", "Data Owner Country/Region", "Data Owner Industry", "Website", "Social Media Handle", "Social Media Type", "Role"]
     },
