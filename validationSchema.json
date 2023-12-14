@@ -8,25 +8,23 @@
     "Client": {
       "type": "object",
       "properties": {
-        "DataCap Applicant": { "type": "string" },
-        "Data Owner Name": { "type": "string" },
-        "Data Owner Country/Region": { "type": "string" },
-        "Data Owner Industry": { "type": "string" },
+        "Name": { "type": "string" },
+        "Region": { "type": "string" },
+        "Industry": { "type": "string" },
         "Website": { "type": "string" },
-        "Social Media Handle": { "type": "string" },
-        "Social Media Type": { "type": "string" },
-        "What is your role related to the dataset": { "type": "string" }
+        "Social Media": { "type": "string" },
+        "Role": { "type": "string" }
       },
-      "required": ["DataCap Applicant", "Data Owner Name", "Data Owner Country/Region", "Data Owner Industry", "Website", "Social Media Handle", "Social Media Type", "What is your role related to the dataset"]
+      "required": ["Name", "Region", "Industry", "Website", "Social Media", "Role"]
     },
     "Project": {
       "type": "object",
       "properties": {
         "Project Id": { "type": "string" },
-        "Share a brief history of your project and organization": { "type": "string" },
+        "Brief history of your project and organization": { "type": "string" },
         "Is this project associated with other projects/ecosystem stakeholders?": { "type": "string" },
         "Describe the data being stored onto Filecoin": { "type": "string" },
-        "Where was the data currently stored in this dataset sourced from": { "type": "string" },
+        "Where was the data currently stored in this dataset sourced from} ": { "type": "string" },
         "How do you plan to prepare the dataset": { "type": "string" },
         "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": { "type": "string" },
         "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": { "type": "string" },
@@ -39,10 +37,10 @@
       },
       "required": [
         "Project Id",
-        "Share a brief history of your project and organization",
+        "Brief history of your project and organization",
         "Is this project associated with other projects/ecosystem stakeholders?",
         "Describe the data being stored onto Filecoin",
-        "Where was the data currently stored in this dataset sourced from",
+        "Where was the data currently stored in this dataset sourced from} ",
         "How do you plan to prepare the dataset",
         "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)",
         "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)",
@@ -57,16 +55,21 @@
     "Datacap": {
       "type": "object",
       "properties": {
-        "Group": { "type": "string" },
+        "Type": { "type": "string" },
         "Data Type": { "type": "string" },
-        "Total amount of DataCap being requested": { "type": "string" },
-        "Expected size of single dataset (one copy)": { "type": "string" },
-        "Number of Replicas to Store": { "type": "number" },
-        "Weekly allocation of DataCap requested": { "type": "string" },
-        "Custom Multisig": { "type": "string" },
-        "Identifier": { "type": "string" }
+        "Total Requested Amount": {
+        "type": "string",
+        "pattern": "\\d+(\\.\\d+)?\\s?(GiB|TiB|PiB|TB|Tb|PB|Pb)$"
+        },
+        "Single Size Dataset": { "type": "string",
+         "pattern": "\\d+(\\.\\d+)?\\s?(GiB|TiB|PiB|TB|Tb|PB|Pb)$"
+        },
+        "Replicas": { "type": "number" },
+        "Weekly Allocation": { "type": "string",
+          "pattern": "\\d+(\\.\\d+)?\\s?(GiB|TiB|PiB|TB|Tb|PB|Pb)$" 
+        }
       },
-      "required": ["Group", "Data Type", "Total amount of DataCap being requested", "Expected size of single dataset (one copy)", "Number of Replicas to Store", "Weekly allocation of DataCap requested"]
+      "required": ["Type", "Data Type", "Total Requested Amount", "Single Size Dataset", "Replicas", "Weekly Allocation"]
     },
     "Lifecycle": {
       "type": "object",
@@ -80,10 +83,20 @@
         "On Chain Address": { "type": "string" },
         "Multisig Address": { "type": "string" }
       },
-      "required": ["State", "Validated At", "Validated By", "Active", "Updated At", "Active Request ID", "On Chain Address", "Multisig Address"]
+      "required": [
+        "State",
+        "Validated At",
+        "Validated By",
+        "Active",
+        "Updated At",
+        "Active Request ID",
+        "On Chain Address",
+        "Multisig Address"
+      ]
     },
     "Allocation Requests": {
       "type": "array",
+      "minItems": 0,
       "items": {
         "type": "object",
         "properties": {
