@@ -1,0 +1,50 @@
+{
+  "Version": 1,
+  "ID": "f410f424a6foarbjmjdv4p4p6jtlwgxfev4s2dqeelry",
+  "Issue Number": "771",
+  "Client": {
+    "DataCap Applicant": "",
+    "Data Owner Name": "Charly Owner Name",
+    "Data Owner Country/Region": "Spain",
+    "Data Owner Industry": "Arts & Recreation",
+    "Website": "keyko.io",
+    "Social Media Handle": "sm handle",
+    "Social Media Type": "Twitter",
+    "What is your role related to the dataset": "Dataset Owner"
+  },
+  "Project": {
+    "Project Id": "111",
+    "Share a brief history of your project and organization": "Sample of project details",
+    "Is this project associated with other projects/ecosystem stakeholders?": "Yes",
+    "Describe the data being stored onto Filecoin": "Use case details storage",
+    "Where was the data currently stored in this dataset sourced from": "Other",
+    "How do you plan to prepare the dataset": "data will be prepared",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "",
+    "What is the expected retrieval frequency for this data": "Weekly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1.5 to 2 years",
+    "In which geographies do you plan on making storage deals": "Asia other than Greater China, South America",
+    "How will you be distributing your data to storage providers": "HTTP or FTP server, Venus built-in data transfer",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": ""
+  },
+  "Datacap": {
+    "Group": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total amount of DataCap being requested": "2 PiB",
+    "Expected size of single dataset (one copy)": "1 TiB",
+    "Number of Replicas to Store": 0,
+    "Weekly allocation of DataCap requested": "1 "
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2023-12-14 08:39:54.109518698 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f410f424a6foarbjmjdv4p4p6jtlwgxfev4s2dqeelry",
+    "Multisig Address": "false"
+  },
+  "Allocation Requests": []
+}
