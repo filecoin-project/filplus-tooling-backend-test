@@ -3,7 +3,7 @@
   "ID": "f410f424a6foarbjmjdv4p4p6jtlwgxfev4s2dqeelry",
   "Issue Number": "771",
   "Client": {
-    "DataCap Applicant": "",
+    "DataCap Applicant": "applicant",
     "Data Owner Name": "Charly Owner Name",
     "Data Owner Country/Region": "Spain",
     "Data Owner Industry": "Arts & Recreation",
@@ -33,8 +33,8 @@
     "Data Type": "Slingshot",
     "Total amount of DataCap being requested": "2 PiB",
     "Expected size of single dataset (one copy)": "1 TiB",
-    "Number of Replicas to Store": 0,
-    "Weekly allocation of DataCap requested": "1 "
+    "Number of Replicas to Store": 4,
+    "Weekly allocation of DataCap requested": "1 PiB"
   },
   "Lifecycle": {
     "State": "Submitted",
