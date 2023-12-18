@@ -36,24 +36,14 @@
     "Weekly Allocation": "2PiB"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
-    "Validated At": "2023-12-18 13:17:17.609700100 UTC",
-    "Validated By": "filplus-github-bot-read-write[bot]",
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
     "Active": true,
-    "Updated At": "2023-12-18 13:17:17.609715500 UTC",
-    "Active Request ID": "f6fb1e7e-17f5-463b-b1f6-90881c2bc964",
+    "Updated At": "2023-12-18 13:17:32.727874410 UTC",
+    "Active Request ID": "",
     "On Chain Address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
     "Multisig Address": "false"
   },
-  "Allocation Requests": [
-    {
-      "ID": "f6fb1e7e-17f5-463b-b1f6-90881c2bc964",
-      "Request Type": "First",
-      "Created At": "2023-12-18 13:17:17.609743500 UTC",
-      "Updated At": "2023-12-18 13:17:17.609747700 UTC",
-      "Active": true,
-      "Allocation Amount": "2PiB",
-      "Signers": []
-    }
-  ]
+  "Allocation Requests": []
 }
