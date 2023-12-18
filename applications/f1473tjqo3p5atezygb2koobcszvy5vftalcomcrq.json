@@ -36,31 +36,14 @@
     "Weekly Allocation": "2.15PiB"
   },
   "Lifecycle": {
-    "State": "StartSignDatacap",
-    "Validated At": "2023-12-18 15:08:32.316447591 UTC",
-    "Validated By": "clriesco",
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
     "Active": true,
-    "Updated At": "2023-12-18 15:26:18.849988116 UTC",
-    "Active Request ID": "4de7f219-7ae4-45c1-abd8-53f95d0e8646",
+    "Updated At": "2023-12-18 15:26:35.796077562 UTC",
+    "Active Request ID": "",
     "On Chain Address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
     "Multisig Address": "false"
   },
-  "Allocation Requests": [
-    {
-      "ID": "4de7f219-7ae4-45c1-abd8-53f95d0e8646",
-      "Request Type": "First",
-      "Created At": "2023-12-18 15:08:32.316451588 UTC",
-      "Updated At": "2023-12-18 15:08:32.316452326 UTC",
-      "Active": true,
-      "Allocation Amount": "2.15PiB",
-      "Signers": [
-        {
-          "Github Username": "clriesco",
-          "Signing Address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
-          "Created At": "2023-12-18 15:26:17.666000000 UTC",
-          "Message CID": "bafy2bzaceb7h2ltofkryls5tvusqjce4mcweqsbgu362ejzcrhwswz4qvcbse"
-        }
-      ]
-    }
-  ]
+  "Allocation Requests": []
 }
