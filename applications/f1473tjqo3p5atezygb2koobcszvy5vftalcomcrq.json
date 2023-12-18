@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "ID": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+  "Issue Number": "791",
+  "Client": {
+    "Name": "Owner",
+    "Region": "Slovenia",
+    "Industry": "Web3 / Crypto",
+    "Website": "site.com",
+    "Social Media": "mysm.com",
+    "Social Media Type": "Slack",
+    "Role": "Dataset Owner"
+  },
+  "Project": {
+    "Project Id": "Pr Id",
+    "Brief history of your project and organization": "A brief history.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "Yes",
+    "Describe the data being stored onto Filecoin": "Data description",
+    "Where was the data currently stored in this dataset sourced from": "Google Cloud",
+    "How do you plan to prepare the dataset": "Way of preparing data",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "www.mylinktothelink.com/link",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[X] I confirm",
+    "What is the expected retrieval frequency for this data": "Weekly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "Less than 1 year",
+    "In which geographies do you plan on making storage deals": "North America, South America, Europe",
+    "How will you be distributing your data to storage providers": "IPFS",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "1. Provider\r\n2. SP provider",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "2.5PiB",
+    "Single Size Dataset": "512GiB",
+    "Replicas": 4,
+    "Weekly Allocation": "2.16PiB"
+  },
+  "Lifecycle": {
+    "State": "Granted",
+    "Validated At": "2023-12-18 15:41:48.943859761 UTC",
+    "Validated By": "charlykeyko",
+    "Active": true,
+    "Updated At": "2023-12-18 15:46:16.674971517 UTC",
+    "Active Request ID": "c46652c5-1175-48a7-9de8-e65b6746c8cf",
+    "On Chain Address": "f1473tjqo3p5atezygb2koobcszvy5vftalcomcrq",
+    "Multisig Address": "false"
+  },
+  "Allocation Requests": [
+    {
+      "ID": "c46652c5-1175-48a7-9de8-e65b6746c8cf",
+      "Request Type": "First",
+      "Created At": "2023-12-18 15:41:48.943864464 UTC",
+      "Updated At": "2023-12-18 15:41:48.943865234 UTC",
+      "Active": false,
+      "Allocation Amount": "2.16PiB",
+      "Signers": [
+        {
+          "Github Username": "kokal33",
+          "Signing Address": "f1j2v7jgg4twnh2y76l3atpbbd2vz7rt6pkxlg2my",
+          "Created At": "2023-12-18 15:43:10.649000000 UTC",
+          "Message CID": "bafy2bzacecopcpy3w6stliieqmqtincezemw4xkvcsl5raq3qil5wpow4vjrm"
+        },
+        {
+          "Github Username": "clriesco",
+          "Signing Address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
+          "Created At": "2023-12-18 15:46:15.661000000 UTC",
+          "Message CID": "bafy2bzacebgyfckbj3zpb7rqo4le5ygeaihxdi4kmaimgkds3mjmh7vkrghzu"
+        }
+      ]
+    }
+  ]
+}
