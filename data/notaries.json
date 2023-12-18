@@ -2382,6 +2382,56 @@
       "previous_config": {
         "signing_address": ""
       }
+    },
+    {
+      "id": 1000,
+      "organization": "Keyko",
+      "name": "Charly",
+      "election_round": "3rd",
+      "status": "Active",
+      "use_case": "General",
+      "location": "Spain",
+      "notary_application_link": "",
+      "website": "http://keyko.io",
+      "email": ["charly@keyko.io", "", ""],
+      "fil_slack_id": "clriesco",
+      "github_user": ["clriesco", ""],
+      "ldn_config": {
+        "active_signer": false,
+        "signing_address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq"
+      },
+      "direct_config": {
+        "active_signer": false,
+        "signing_address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq"
+      },
+      "previous_config": {
+        "signing_address": ""
+      }
+    },
+    {
+      "id": 1001,
+      "organization": "Keyko",
+      "name": "Stojan",
+      "election_round": "3rd",
+      "status": "Active",
+      "use_case": "General",
+      "location": "Slovenia",
+      "notary_application_link": "",
+      "website": "http://keyko.io",
+      "email": ["stojan@keyko.io", "", ""],
+      "fil_slack_id": "kokal33",
+      "github_user": ["kokal33", ""],
+      "ldn_config": {
+        "active_signer": false,
+        "signing_address": "f1j2v7jgg4twnh2y76l3atpbbd2vz7rt6pkxlg2my"
+      },
+      "direct_config": {
+        "active_signer": false,
+        "signing_address": "f1j2v7jgg4twnh2y76l3atpbbd2vz7rt6pkxlg2my"
+      },
+      "previous_config": {
+        "signing_address": ""
+      }
     }
   ]
 }
