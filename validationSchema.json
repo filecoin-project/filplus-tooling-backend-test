@@ -58,15 +58,17 @@
         "Type": { "type": "string" },
         "Data Type": { "type": "string" },
         "Total Requested Amount": {
-        "type": "string",
-        "pattern": "\\d+(\\.\\d+)?\\s?(GiB|TiB|PiB|TB|Tb|PB|Pb)$"
+          "type": "number",
+          "minimum": 0.0000000001
         },
-        "Single Size Dataset": { "type": "string",
-         "pattern": "\\d+(\\.\\d+)?\\s?(GiB|TiB|PiB|TB|Tb|PB|Pb)$"
+        "Single Size Dataset": {
+          "type": "number",
+          "minimum": 0.0000000001
         },
         "Replicas": { "type": "number" },
-        "Weekly Allocation": { "type": "string",
-          "pattern": "\\d+(\\.\\d+)?\\s?(GiB|TiB|PiB|TB|Tb|PB|Pb)$" 
+        "Weekly Allocation": {
+          "type": "number",
+          "minimum": 0.0000000001
         }
       },
       "required": ["Type", "Data Type", "Total Requested Amount", "Single Size Dataset", "Replicas", "Weekly Allocation"]
