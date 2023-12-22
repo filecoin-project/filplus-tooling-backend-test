@@ -40,8 +40,8 @@
     "Validated At": "2023-12-21 15:58:35.815593185 UTC",
     "Validated By": "charlykeyko",
     "Active": true,
-    "Updated At": "2023-12-21 17:37:16.923180382 UTC",
-    "Active Request ID": "4fb1cf0a-9970-4e8f-9a80-d598219f7418",
+    "Updated At": "2023-12-22 09:45:01.039597810 UTC",
+    "Active Request ID": "8835c36c-dd41-4e5f-9972-11b692e94a27",
     "On Chain Address": "f13y7egp3cu7o6eog5fliizqt24f5o6qwnedbdq5a",
     "Multisig Address": "false"
   },
@@ -87,6 +87,28 @@
           "Signing Address": "f1j2v7jgg4twnh2y76l3atpbbd2vz7rt6pkxlg2my",
           "Created At": "2023-12-21 17:37:15.966000000 UTC",
           "Message CID": "bafy2bzacecxqxfgdx6wuvybe66toxrxddyc67xx5l7esnfrfseccesuvqowli"
+        }
+      ]
+    },
+    {
+      "ID": "8835c36c-dd41-4e5f-9972-11b692e94a27",
+      "Request Type": "Refill",
+      "Created At": "2023-12-21 18:00:06.013662820 UTC",
+      "Updated At": "2023-12-21 18:00:06.013663705 UTC",
+      "Active": false,
+      "Allocation Amount": "512TiB",
+      "Signers": [
+        {
+          "Github Username": "clriesco",
+          "Signing Address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq",
+          "Created At": "2023-12-22 09:34:09.169000000 UTC",
+          "Message CID": "bafy2bzacebe7ymidmgwttof5dfsqqeqx4ogmnwmkdpzbetg4mauk74mfy6z5e"
+        },
+        {
+          "Github Username": "kokal33",
+          "Signing Address": "f1j2v7jgg4twnh2y76l3atpbbd2vz7rt6pkxlg2my",
+          "Created At": "2023-12-22 09:44:59.954000000 UTC",
+          "Message CID": "bafy2bzacebdfegvczgwcejs3cwo5xox4fvheh6pbcjlamuycgn45qc72bajus"
         }
       ]
     }
