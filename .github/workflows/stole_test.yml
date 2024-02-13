@@ -1,0 +1,37 @@
+name: Applications JSON Validator on Push
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'applications/**/*.json'
+
+jobs:
+  stole_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Find changed JSON files in Applications folder
+        id: find_json
+        run: |
+          echo "Searching for JSON files in 'applications' folder..."
+          FILES_CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep 'applications/.*\.json$')
+          echo "::set-output name=files_changed::$FILES_CHANGED"
+
+      - name: Notify Backend Service
+        if: steps.find_json.outputs.files_changed != ''
+        env:
+          DOMAIN: ${{ secrets.DOMAIN }}
+        run: |
+          for file in $FILES_CHANGED
+          do
+            echo "Notifying backend about change in $file"
+            curl --header "Content-Type: application/json" \
+                 --request POST \
+                 --data '{"file_changed": "'$file'"}' \
+                 "${DOMAIN}/application/json-changed"
+          done
