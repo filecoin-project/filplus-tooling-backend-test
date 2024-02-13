@@ -2,6 +2,7 @@ REPOS=(
     "git@github.com:keyko-io/test-phillip-second.git"
     "git@github.com:keyko-io/alexander-the-test.git"
     "git@github.com:keyko-io/great-test-library.git"
+    "git@github.com:filecoin-project/filplus-tooling-backend-test.git"
 )
 
 # Ensure that changes are ready to commit
