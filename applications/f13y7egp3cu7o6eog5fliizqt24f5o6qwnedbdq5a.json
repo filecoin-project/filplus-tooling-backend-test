@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "ID": "f13y7egp3cu7o6eog5fliizqt24f5o6qwnedbdq5a",
+  "Issue Number": "6",
+  "Client": {
+    "Name": "Keyko",
+    "Region": "Spain",
+    "Industry": "Transport Services",
+    "Website": "www.keyko.io",
+    "Social Media": "@keyko",
+    "Social Media Type": "Slack",
+    "Role": "Dataset Owner"
+  },
+  "Project": {
+    "Project Id": "1",
+    "Brief history of your project and organization": "test history",
+    "Is this project associated with other projects/ecosystem stakeholders?": "Yes",
+    "Describe the data being stored onto Filecoin": "test use case",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "test preparation",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "sample 1\r\nsample 2\r\nsample 3",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[X] I confirm",
+    "What is the expected retrieval frequency for this data": "Weekly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1 to 1.5 years",
+    "In which geographies do you plan on making storage deals": "Greater China, Asia other than Greater China",
+    "How will you be distributing your data to storage providers": "HTTP or FTP server, IPFS",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "List SPs",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "2PiB",
+    "Single Size Dataset": "1TiB",
+    "Replicas": 6,
+    "Weekly Allocation": "1PiB"
+  },
+  "Lifecycle": {
+    "State": "Granted",
+    "Validated At": "2024-02-14 13:42:53.842317892 UTC",
+    "Validated By": "AlexMCon",
+    "Active": true,
+    "Updated At": "2024-02-14 14:17:46.646726126 UTC",
+    "Active Request ID": "7fc20b53-7f35-45e6-a6e7-15c1a73a3cd1",
+    "On Chain Address": "f13y7egp3cu7o6eog5fliizqt24f5o6qwnedbdq5a",
+    "Multisig Address": "false"
+  },
+  "Allocation Requests": [
+    {
+      "ID": "7fc20b53-7f35-45e6-a6e7-15c1a73a3cd1",
+      "Request Type": "First",
+      "Created At": "2024-02-14 13:42:53.842339022 UTC",
+      "Updated At": "2024-02-14 13:42:53.842341968 UTC",
+      "Active": false,
+      "Allocation Amount": "1PiB",
+      "Signers": [
+        {
+          "Github Username": "AlexMCon",
+          "Signing Address": "",
+          "Created At": "2024-02-14 14:16:41.456000000 UTC",
+          "Message CID": "testMessageCIDProposal"
+        },
+        {
+          "Github Username": "AlexMCon",
+          "Signing Address": "",
+          "Created At": "2024-02-14 14:17:44.674000000 UTC",
+          "Message CID": "testMessageCIDProposal"
+        }
+      ]
+    }
+  ]
+}
