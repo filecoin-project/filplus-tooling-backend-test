@@ -36,11 +36,11 @@
     "Weekly Allocation": "1PiB"
   },
   "Lifecycle": {
-    "State": "StartSignDatacap",
+    "State": "Granted",
     "Validated At": "2024-02-14 13:42:53.842317892 UTC",
     "Validated By": "AlexMCon",
     "Active": true,
-    "Updated At": "2024-02-14 14:16:43.476515264 UTC",
+    "Updated At": "2024-02-14 14:17:46.646726126 UTC",
     "Active Request ID": "7fc20b53-7f35-45e6-a6e7-15c1a73a3cd1",
     "On Chain Address": "f13y7egp3cu7o6eog5fliizqt24f5o6qwnedbdq5a",
     "Multisig Address": "false"
@@ -51,13 +51,19 @@
       "Request Type": "First",
       "Created At": "2024-02-14 13:42:53.842339022 UTC",
       "Updated At": "2024-02-14 13:42:53.842341968 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "1PiB",
       "Signers": [
         {
           "Github Username": "AlexMCon",
           "Signing Address": "",
           "Created At": "2024-02-14 14:16:41.456000000 UTC",
+          "Message CID": "testMessageCIDProposal"
+        },
+        {
+          "Github Username": "AlexMCon",
+          "Signing Address": "",
+          "Created At": "2024-02-14 14:17:44.674000000 UTC",
           "Message CID": "testMessageCIDProposal"
         }
       ]
