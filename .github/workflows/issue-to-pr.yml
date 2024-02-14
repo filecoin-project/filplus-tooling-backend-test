@@ -20,5 +20,5 @@ jobs:
           echo ${{ github.event.issue.number }}
           curl --header "Content-Type: application/json" \
                --request POST \
-               --data '{"issue_number": "'${{ github.event.issue.number }}'"}' \
+               --data '{"issue_number": "'${{ github.event.issue.number }}'", "repo": "'${{ github.repository }}'", "owner": "'${{ github.repository_owner }}'"}' \
                "${DOMAIN}/application"
