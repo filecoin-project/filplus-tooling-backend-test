@@ -1,3 +1,4 @@
+#!/bin/bash
 REPOS=(
     "git@github.com:keyko-io/test-phillip-second.git"
     "git@github.com:keyko-io/alexander-the-test.git"
