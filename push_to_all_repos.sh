@@ -7,7 +7,6 @@ REPOS=(
 )
 
 # Ensure that changes are ready to commit
-# You can modify this part as per your requirement
 git add .
 echo "Enter commit message: "
 read COMMIT_MESSAGE
