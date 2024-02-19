@@ -8,12 +8,12 @@
  *  · application.Lifecycle['Active Request ID']  must be empty
  *  · application['Allocation Requests'] array must be empty
  * - When an aplication is in some other state
- *  · actor must be filplus-github-bot-read-write[bot]
+ *  · actor must be filplus-allocators-staging-bot[bot]
  */
 
 import axios from "axios";
 
-const FILPLUS_BOT="filplus-github-bot-read-write[bot]";
+const FILPLUS_BOT="filplus-allocators-staging-bot[bot]";
 
 /**
  * This is the main function that will be executed by the workflow and it will validate the application flow
